@@ -1,9 +1,12 @@
 import { Route, Routes } from 'react-router-dom'
-import Home from './Home'
 import { Container } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { RouteNames } from './constants'
+import Home from './pages/Home';
+
 import Izbornik from './components/Izbornik'
-import { IME_APLIKACIJE } from "../constants"; 
-import { RouteNames } from "../constants"; 
+import { IME_APLIKACIJE } from './constants'
+
 
 
 
