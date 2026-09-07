@@ -26,18 +26,18 @@ export default function Izbornik() {
                         
                         >Početna</Nav.Link>
                         
-                        <NavDropdown title="Ponuda" id="basic-nav-dropdown">
+                        <NavDropdown title="Reformer" id="basic-nav-dropdown">
                             <NavDropdown.Item 
                             
-                            onClick={()=>navigate(RouteNames.USLUGE)}
+                            onClick={()=>navigate(RouteNames.INDIVIDUALNI)}
                             
-                            >Usluge</NavDropdown.Item>
+                            >Individualni</NavDropdown.Item>
                            
                             <NavDropdown.Item
                             
                             
-                            onClick={()=>navigate(RouteNames.KONTAKT)}
-                            >Kontakt</NavDropdown.Item>
+                            onClick={()=>navigate(RouteNames.GRUPNI)}
+                            >Grupni</NavDropdown.Item>
 
 
                             <NavDropdown.Divider />
