@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { RouteNames } from './constants'
 import Home from './pages/Home';
-
+import Individualni from './pages/Individualni/Individualni';
 import Izbornik from './components/Izbornik'
 import { IME_APLIKACIJE } from './constants'
 
@@ -18,6 +18,7 @@ function App() {
       <Container className="mt-4">
         <Routes>
           <Route path={RouteNames.HOME} element={<Home />} />
+          <Route path={RouteNames.INDIVIDUALNI} element={<Individualni />} />
         </Routes>
       </Container>
       <hr />
