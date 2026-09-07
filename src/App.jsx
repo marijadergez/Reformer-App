@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Individualni from './pages/Individualni/Individualni';
 import Izbornik from './components/Izbornik'
 import { IME_APLIKACIJE } from './constants'
+import Grupni from './pages/Grupni/Grupni';
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path={RouteNames.HOME} element={<Home />} />
           <Route path={RouteNames.INDIVIDUALNI} element={<Individualni />} />
+          <Route path={RouteNames.GRUPNI} element={<Grupni />} />
         </Routes>
       </Container>
       <hr />

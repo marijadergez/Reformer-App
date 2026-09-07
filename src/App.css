@@ -182,3 +182,14 @@
     border-right-color: var(--border);
   }
 }
+
+.container {
+  max-width: 1200px;
+  margin-bottom: 10px auto;
+  padding: 0 32px;
+
+
+  @media (max-width: 1024px) {
+    padding: 0 20px;
+  }
+}
