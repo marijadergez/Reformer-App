@@ -27,24 +27,23 @@ export default function Izbornik() {
                         >Početna</Nav.Link>
                         
                         <NavDropdown title="Reformer" id="basic-nav-dropdown">
-                            <NavDropdown.Item 
-                            
-                            onClick={()=>navigate(RouteNames.INDIVIDUALNI)}
-                            
+
+                            <NavDropdown.Item                             
+                            onClick={()=>navigate(RouteNames.INDIVIDUALNI)}                            
                             >Individualni</NavDropdown.Item>
                            
-                            <NavDropdown.Item
-                            
-                            
+                            <NavDropdown.Item                       
                             onClick={()=>navigate(RouteNames.GRUPNI)}
                             >Grupni</NavDropdown.Item>
 
 
                             <NavDropdown.Divider />
 
-                            <NavDropdown.Item href="#action/3.4">
-                                Rezerviraj termin
-                            </NavDropdown.Item>
+                            <NavDropdown.Item 
+                            onClick={()=>navigate(RouteNames.REZERVACIJE)}
+                            >Rezervacije</NavDropdown.Item>
+
+
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
