@@ -1,34 +1,77 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-
 export default function REZERVACIJE() {
     return (
-        <>
-            <h1>Rezervacije termina</h1>
+        <main className="page-wrapper">
+            <section className="page-card reveal show">
 
-            <p>
-                Rezervacije termina za individualne treninge
-                možete izvršiti klikom na:
-                
-                <button className="me-2">
-                    Rezerviraj termin
-                </button>
+                <div className="page-header">
+                    <span className="page-eyebrow">
+                        Reformer Centar
+                    </span>
 
-                ili osobnim dolaskom na adresu studija:
-                BlueGym Centar Osijek, Pavla Pejačevića 22.
+                    <h1>Rezervacije termina</h1>
+                </div>
 
-                <br /><br />
+                <div className="reservation-grid">
 
-                Ukoliko želite rezervirati termin za grupni trening,
-                to možete izvršiti osobnim dolaskom u studio, kako bismo
-                utvrdili detaljne opcije i način plaćanja.
+                    <div className="reservation-card">
+                        <i className="bi bi-person-check"></i>
 
-                <br /><br />
+                        <h2>Individualni trening</h2>
 
-                Ako su treninzi u tijeku, nažalost nećemo moći odgovoriti
-                na Vaše upite, stoga u ponudi ne postoji kontakt forma za
-                komuniciranje putem e-maila, društvenih mreža ili telefonskog
-                poziva, ali radimo na tome.           </p>
-        </>
+                        <p>
+                            Rezervaciju termina za individualni trening
+                            možete izvršiti klikom na gumb ili osobnim
+                            dolaskom u studio.
+                        </p>
+
+                        <br />
+
+                        <button className="page-button">
+                            Rezerviraj termin
+                        </button>
+                    </div>
+
+                    <div className="reservation-card">
+                        <i className="bi bi-people"></i>
+
+                        <h2>Grupni trening</h2>
+
+                        <p>
+                            Za rezervaciju grupnog treninga potrebno je
+                            osobno doći u studio kako bismo dogovorili
+                            detalje i način plaćanja.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div className="address-card">
+                    <strong>Gdje se nalazimo?</strong>
+
+                    <span>
+                        BlueGym Centar Osijek, Pavla Pejačevića 22,
+                        Osijek
+                    </span>
+                </div>
+
+                <div className="page-content">
+
+                    <p>
+                        Ako su treninzi u tijeku, nažalost nećemo moći
+                        odmah odgovoriti na vaše upite.
+                    </p>
+
+                    <p>
+                        Trenutno nemamo kontakt formu za komunikaciju putem
+                        e-maila, društvenih mreža ili telefonskog poziva,
+                        ali radimo na tome.
+                    </p>
+
+                </div>
+
+            </section>
+        </main>
     )
 }

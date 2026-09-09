@@ -11,6 +11,7 @@ import Grupni from './pages/Grupni/Grupni';
 
 import './App.css'
 import "bootstrap-icons/font/bootstrap-icons.css";
+import REZERVACIJE from './pages/Rezervacije/Rezervacije';
 
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path={RouteNames.HOME} element={<Home />} />
           <Route path={RouteNames.INDIVIDUALNI} element={<Individualni />} />
           <Route path={RouteNames.GRUPNI} element={<Grupni />} />
+          <Route path={RouteNames.REZERVACIJE} element={<REZERVACIJE />} />
         </Routes>
       </Container>
       <hr />

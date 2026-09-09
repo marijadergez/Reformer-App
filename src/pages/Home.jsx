@@ -184,8 +184,8 @@ function HOME() {
           </div>
 
           <div className="stats-grid">
-            <Stat number="55" label="minuta individualnog treninga" />
-            <Stat number="90" label="minuta grupnog programa" />
+            <Stat number="55" label="individualnog treninga" />
+            <Stat number="90" label="grupnog programa" />
             <Stat number="1" label="reformer po individualnom treningu" />
           </div>
 
@@ -466,14 +466,6 @@ function HOME() {
       {/* FOOTER */}
       <footer className="footer">
 
-        <div>
-          <strong>{IME_APLIKACIJE}</strong>
-          <span>Reformer • Pilates • Movement</span>
-        </div>
-
-        <p>
-          © {new Date().getFullYear()} {IME_APLIKACIJE}
-        </p>
 
       </footer>
 
