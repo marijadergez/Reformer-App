@@ -25,7 +25,8 @@ function App() {
       </Container>
       <hr />
       <div className="text-center">
-        &copy; {new Date().getFullYear()} | MDergez, obrt za usluge | {IME_APLIKACIJE}
+        &copy; {new Date().getFullYear()} | MDergez, obrt za usluge | R App
+        
       </div>
     </>
   )
