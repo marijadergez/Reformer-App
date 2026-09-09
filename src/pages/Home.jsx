@@ -57,12 +57,17 @@ const Stat = ({ number, label }) => {
   return (
     <div className="stat-card">
       <strong>
-        {count}
-        {number === "55" ? " min" : number === "90" ? " min" : "+"}
-      </strong>
+  {count}
+  {(number === "55" || number === "90") && (
+    <small>min</small>
+  )}
+  {number === "1" && "+"}
+</strong>
+
       <span>{label}</span>
     </div>
   );
+
 };
 
 function HOME() {
@@ -183,11 +188,11 @@ function HOME() {
             </h2>
           </div>
 
-          <div className="stats-grid">
-            <Stat number="55" label="individualnog treninga" />
-            <Stat number="90" label="grupnog programa" />
-            <Stat number="1" label="reformer po individualnom treningu" />
-          </div>
+                  <div className="stats-grid">
+                      <Stat number="55" unit="min" label="individualnog treninga" />
+                      <Stat number="90" unit="min" label="grupnog programa" />
+                      <Stat number="1" unit="" label="reformer po treningu" />
+                  </div>
 
         </section>
       </Reveal>
@@ -202,7 +207,7 @@ function HOME() {
             <h2>
               Od prvog pokreta
               <br />
-              do osjećaja <em>snage.</em>
+              do osjećaja <em>lakoće.</em>
             </h2>
           </div>
 

@@ -43,6 +43,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+
   background:
     radial-gradient(
       circle at 10% 10%,
@@ -83,6 +84,7 @@ a {
   padding: 14px 0;
 
   background: rgba(247, 248, 247, 0.78) !important;
+
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 
@@ -149,6 +151,8 @@ a {
 }
 
 .site-navbar .dropdown-menu {
+  padding: 8px;
+
   border: 1px solid var(--border);
   border-radius: 16px;
 
@@ -158,13 +162,11 @@ a {
   -webkit-backdrop-filter: blur(18px);
 
   box-shadow: var(--shadow);
-
-  padding: 8px;
 }
 
 .site-navbar .dropdown-item {
-  border-radius: 10px;
   padding: 9px 12px;
+  border-radius: 10px;
 
   transition: 0.2s ease;
 }
@@ -179,16 +181,41 @@ a {
    ========================================================= */
 
 .home {
+  width: 100%;
   overflow: hidden;
 }
 
 .home section {
   position: relative;
+  width: 100%;
 }
 
 .home-container {
-  width: min(100% - 40px, var(--max-width));
+  width: min(92%, var(--max-width));
   margin: 0 auto;
+}
+
+.home > section > .container,
+.home > section > .row {
+  width: min(92%, var(--max-width));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.home .container-fluid {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.home img,
+.home video,
+.home iframe {
+  max-width: 100%;
 }
 
 /* =========================================================
@@ -202,8 +229,6 @@ a {
   align-items: center;
 
   padding: 100px 20px 80px;
-
-  position: relative;
 }
 
 .hero::before {
@@ -398,15 +423,12 @@ a {
 
 .feature-grid {
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
-
   gap: 20px;
 }
 
 .feature-card {
   min-height: 260px;
-
   padding: 30px;
 }
 
@@ -437,7 +459,6 @@ a {
 
 .feature-card p {
   margin: 0;
-
   color: var(--text-soft);
 }
 
@@ -453,7 +474,9 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
+  width: 100%;
   max-width: 900px;
+
   margin: auto;
 
   overflow: hidden;
@@ -462,11 +485,12 @@ a {
   border-radius: var(--radius);
 
   background: rgba(255, 255, 255, 0.45);
+
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 }
 
-.stat {
+.stat-card {
   padding: 35px;
 
   text-align: center;
@@ -474,14 +498,14 @@ a {
   border-right: 1px solid var(--border);
 }
 
-.stat:last-child {
+.stat-card:last-child {
   border-right: none;
 }
 
-.stat-number {
+.stat-card strong {
   display: block;
 
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 
   color: var(--accent-dark);
 
@@ -490,7 +514,9 @@ a {
   font-weight: 700;
 }
 
-.stat-label {
+.stat-card span {
+  display: block;
+
   color: var(--text-soft);
   font-size: 0.9rem;
 }
@@ -529,7 +555,6 @@ a {
 
 .timeline-item p {
   margin: 0;
-
   color: var(--text-soft);
 }
 
@@ -539,9 +564,7 @@ a {
 
 .program-grid {
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
-
   gap: 25px;
 }
 
@@ -575,11 +598,9 @@ a {
 
 .existing-programs {
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
 
   gap: 25px;
-
   padding: 20px;
 }
 
@@ -593,7 +614,6 @@ a {
 
 .quote-section {
   padding: 120px 20px;
-
   text-align: center;
 }
 
@@ -623,10 +643,9 @@ a {
    ========================================================= */
 
 .reservation-cta {
+  max-width: 1100px;
   margin: 40px auto;
   padding: 70px 30px;
-
-  max-width: 1100px;
 
   border-radius: 30px;
 
@@ -654,14 +673,12 @@ a {
 
 /* =========================================================
    UNUTARNJE STRANICE
-   Individualni / Grupni / Rezervacije
    ========================================================= */
 
 .page-wrapper {
   width: min(100% - 40px, 1000px);
 
   margin: 0 auto;
-
   padding: 90px 0;
 }
 
@@ -723,11 +740,9 @@ a {
 
 .info-grid {
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
 
   gap: 18px;
-
   margin: 35px 0;
 }
 
@@ -746,19 +761,16 @@ a {
   margin-bottom: 10px;
 
   color: var(--accent-dark);
-
   font-size: 1.5rem;
 }
 
 .info-card h3 {
   margin-bottom: 5px;
-
   font-size: 1rem;
 }
 
 .info-card p {
   margin: 0;
-
   font-size: 0.9rem;
 }
 
@@ -768,11 +780,9 @@ a {
 
 .reservation-grid {
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
 
   gap: 20px;
-
   margin: 35px 0;
 }
 
@@ -789,6 +799,7 @@ a {
 
 .reservation-card:hover {
   transform: translateY(-5px);
+
   background: rgba(255, 255, 255, 0.75);
 
   box-shadow: var(--shadow);
@@ -800,7 +811,6 @@ a {
   margin-bottom: 18px;
 
   color: var(--accent-dark);
-
   font-size: 1.8rem;
 }
 
@@ -813,7 +823,6 @@ a {
 
 .reservation-card p {
   margin: 0;
-
   color: var(--text-soft);
 }
 
@@ -826,7 +835,6 @@ a {
   padding: 25px;
 
   border-left: 3px solid var(--accent);
-
   border-radius: 0 var(--radius-small) var(--radius-small) 0;
 
   background: rgba(255, 255, 255, 0.45);
@@ -846,44 +854,100 @@ a {
    ========================================================= */
 
 .social-section {
-  padding: 80px 20px;
+  width: 100%;
 
+  padding: 110px 20px 100px;
+
+  text-align: center;
+}
+
+.social-section > * {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-section h2 {
+  margin: 8px auto 15px;
+
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.05;
+}
+
+.social-section p {
+  max-width: 600px;
+
+  margin: 0 auto 35px;
+
+  color: var(--text-soft);
   text-align: center;
 }
 
 .social-links {
   display: flex;
-  justify-content: center;
-  gap: 12px;
 
-  margin-top: 25px;
-}
-
-.social-link {
-  width: 48px;
-  height: 48px;
-
-  display: flex;
   align-items: center;
   justify-content: center;
+
+  gap: 24px;
+
+  width: 100%;
+
+  margin: 35px auto 0;
+}
+
+/* Desktop social ikone */
+
+.social-link,
+.social-links a {
+  width: 76px;
+  height: 76px;
+
+  min-width: 76px;
+  flex: 0 0 76px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
 
   border: 1px solid var(--border);
   border-radius: 50%;
 
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.65);
 
-  color: var(--text);
+  color: var(--accent-dark);
 
-  transition: 0.3s ease;
+  font-size: 2rem;
+
+  box-shadow: 0 10px 30px rgba(40, 50, 46, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-.social-link:hover {
-  transform: translateY(-4px);
+.social-link i,
+.social-links a i {
+  margin: 0;
+
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.social-link:hover,
+.social-links a:hover {
+  transform: translateY(-6px) scale(1.05);
 
   background: var(--accent);
   color: white;
 
-  box-shadow: 0 10px 25px rgba(83, 105, 96, 0.20);
+  box-shadow: 0 15px 35px rgba(83, 105, 96, 0.22);
 }
 
 /* =========================================================
@@ -891,15 +955,39 @@ a {
    ========================================================= */
 
 .site-footer {
+  width: 100%;
+
+  margin: 0;
   padding: 35px 20px;
 
   border-top: 1px solid var(--border);
+
+  background: rgba(247, 248, 247, 0.65);
 
   color: var(--text-soft);
 
   text-align: center;
 
   font-size: 0.85rem;
+}
+
+.site-footer .footer-container,
+.footer-content {
+  width: min(92%, var(--max-width));
+
+  margin: 0 auto;
+  padding: 0;
+
+  text-align: center;
+}
+
+.site-footer p,
+.footer-content p {
+  margin: 6px 0;
+}
+
+.site-footer strong {
+  color: var(--text);
 }
 
 /* =========================================================
@@ -949,7 +1037,7 @@ a {
 }
 
 /* =========================================================
-   RESPONSIVE
+   TABLET
    ========================================================= */
 
 @media (max-width: 992px) {
@@ -968,6 +1056,10 @@ a {
   }
 }
 
+/* =========================================================
+   TABLET / MOBILE
+   ========================================================= */
+
 @media (max-width: 768px) {
   .section {
     padding: 75px 20px;
@@ -981,12 +1073,12 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .stat {
+  .stat-card {
     border-right: none;
     border-bottom: 1px solid var(--border);
   }
 
-  .stat:last-child {
+  .stat-card:last-child {
     border-bottom: none;
   }
 
@@ -1001,7 +1093,6 @@ a {
 
   .page-wrapper {
     width: min(100% - 25px, 1000px);
-
     padding: 55px 0;
   }
 
@@ -1012,7 +1103,33 @@ a {
   .hero {
     padding: 80px 20px 60px;
   }
+
+  /* Social na tabletu */
+
+  .social-links {
+    gap: 18px;
+  }
+
+  .social-link,
+  .social-links a {
+    width: 64px;
+    height: 64px;
+
+    min-width: 64px;
+    flex-basis: 64px;
+
+    font-size: 1.7rem;
+  }
+
+  .social-link i,
+  .social-links a i {
+    font-size: 1.7rem;
+  }
 }
+
+/* =========================================================
+   MOBITEL
+   ========================================================= */
 
 @media (max-width: 480px) {
   .hero h1 {
@@ -1033,7 +1150,23 @@ a {
   }
 
   .social-links {
-    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .social-link,
+  .social-links a {
+    width: 56px;
+    height: 56px;
+
+    min-width: 56px;
+    flex-basis: 56px;
+
+    font-size: 1.5rem;
+  }
+
+  .social-link i,
+  .social-links a i {
+    font-size: 1.5rem;
   }
 }
 
@@ -1053,316 +1186,4 @@ a {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-}
-/* =========================================================
-   HOME — PORAVNANJE I SOCIALS FIX
-   ========================================================= */
-
-/* Glavni sadržaj Homea */
-.home {
-  width: 100%;
-  overflow: hidden;
-}
-
-/* Svi glavni sectioni na Homeu */
-.home section {
-  width: 100%;
-}
-
-/* Centriranje sadržaja */
-.home-container {
-  width: min(92%, 1200px);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Ako neki postojeći sadržaj nema home-container */
-.home > section > .container,
-.home > section > .row {
-  width: min(92%, 1200px);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-/* =========================================================
-   SOCIAL IKONICE
-   ========================================================= */
-
-.social-section {
-  width: 100%;
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.social-section h2 {
-  margin-bottom: 12px;
-
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 5vw, 3.2rem);
-}
-
-.social-section p {
-  max-width: 600px;
-  margin: 0 auto 30px;
-
-  color: var(--text-soft);
-}
-
-.social-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  gap: 18px;
-
-  width: 100%;
-  margin: 30px auto 0;
-}
-
-.social-link {
-  width: 64px;
-  height: 64px;
-
-  flex: 0 0 64px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: 1px solid var(--border);
-  border-radius: 50%;
-
-  background: rgba(255, 255, 255, 0.65);
-
-  color: var(--accent-dark);
-
-  font-size: 1.7rem;
-
-  box-shadow: 0 10px 30px rgba(40, 50, 46, 0.08);
-
-  transition:
-    transform 0.3s ease,
-    background 0.3s ease,
-    color 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.social-link i {
-  font-size: 1.7rem;
-  line-height: 1;
-}
-
-.social-link:hover {
-  transform: translateY(-6px) scale(1.05);
-
-  background: var(--accent);
-  color: white;
-
-  box-shadow: 0 15px 35px rgba(83, 105, 96, 0.25);
-}
-
-
-/* =========================================================
-   HOME — SPRIJEČI PREŠIROKE ELEMENTE
-   ========================================================= */
-
-.home img,
-.home video,
-.home iframe {
-  max-width: 100%;
-}
-
-.home .row {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.home .container-fluid {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-
-/* =========================================================
-   SOCIALS - HOME
-   ========================================================= */
-
-.social-section {
-  width: 100%;
-  padding: 110px 20px 100px;
-  text-align: center;
-}
-
-.social-section > * {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.social-section h2 {
-  margin: 8px auto 15px;
-
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  line-height: 1.05;
-
-  text-align: center;
-}
-
-.social-section p {
-  margin: 0 auto 35px;
-
-  color: var(--text-soft);
-  text-align: center;
-}
-
-.social-links {
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
-
-  gap: 18px;
-
-  margin: 35px auto 0;
-
-  text-align: center;
-}
-
-/* Radi čak i ako <a> nema className="social-link" */
-.social-links a,
-.social-link {
-  width: 64px;
-  height: 64px;
-
-  min-width: 64px;
-
-  display: inline-flex !important;
-  align-items: center;
-  justify-content: center;
-
-  margin: 0;
-
-  border: 1px solid var(--border);
-  border-radius: 50%;
-
-  background: rgba(255, 255, 255, 0.65);
-
-  color: var(--accent-dark);
-
-  font-size: 1.8rem;
-
-  box-shadow: 0 8px 25px rgba(40, 50, 46, 0.08);
-
-  transition:
-    transform 0.3s ease,
-    background 0.3s ease,
-    color 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.social-links a i,
-.social-link i {
-  margin: 0;
-
-  font-size: 1.8rem;
-  line-height: 1;
-}
-
-.social-links a:hover,
-.social-link:hover {
-  transform: translateY(-6px) scale(1.05);
-
-  background: var(--accent);
-  color: white;
-
-  box-shadow: 0 15px 35px rgba(83, 105, 96, 0.22);
-}
-
-
-/* =========================================================
-   FOOTER
-   ========================================================= */
-
-.site-footer {
-  width: 100%;
-
-  margin: 0;
-  padding: 35px 20px;
-
-  border-top: 1px solid var(--border);
-
-  background: rgba(247, 248, 247, 0.65);
-
-  color: var(--text-soft);
-
-  text-align: center;
-}
-
-.site-footer .footer-container {
-  width: min(92%, 1200px);
-
-  margin: 0 auto;
-
-  text-align: center;
-}
-
-.site-footer p {
-  margin: 5px 0;
-}
-
-.site-footer strong {
-  color: var(--text);
-}
-
-
-/* =========================================================
-   FOOTER CONTENT - AKO GA HOME TRENUTNO KORISTI
-   ========================================================= */
-
-.footer-content {
-  width: min(92%, 1200px);
-
-  margin: 0 auto;
-
-  padding: 0;
-
-  text-align: center;
-}
-
-.footer-content p {
-  margin: 6px 0;
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 600px) {
-  .social-section {
-    padding: 80px 15px;
-  }
-
-  .social-links {
-    gap: 12px;
-  }
-
-  .social-links a,
-  .social-link {
-    width: 56px;
-    height: 56px;
-
-    min-width: 56px;
-  }
-
-  .social-links a i,
-  .social-link i {
-    font-size: 1.5rem;
-  }
-}
-.stat-number {
-  margin-right: 10px;
 }
