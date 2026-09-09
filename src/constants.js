@@ -5,4 +5,5 @@ export const RouteNames = {
   HOME: '/',
   INDIVIDUALNI: '/individualni',
   GRUPNI: '/grupni',
+  REZERVACIJE: '/rezervacije',
 }
