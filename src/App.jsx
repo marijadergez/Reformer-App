@@ -9,6 +9,9 @@ import { IME_APLIKACIJE } from './constants'
 import Grupni from './pages/Grupni/Grupni';
 
 
+import './App.css'
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 
 
 
