@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -8,6 +8,7 @@
   border: 2px solid transparent;
   transition: border-color 0.3s;
   margin-bottom: 24px;
+}
 
   &:hover {
     border-color: var(--accent-border);
@@ -16,7 +17,7 @@
     outline: 2px solid var(--accent);
     outline-offset: 2px;
   }
-=======
+
 
 /* =========================================================
    REFORMER CENTAR
@@ -67,7 +68,7 @@ body {
     min-height: 100vh;
 
     overflow-x: hidden;
->>>>>>> Stashed changes
+
 }
 
 .hero {
@@ -269,1181 +270,707 @@ body::before {
     animation: floatingCircle 10s ease-in-out infinite;
 }
 
-<<<<<<< Updated upstream
   @media (max-width: 1024px) {
     padding: 0 20px;
   }
 }
-=======
+/* =========================================
+   EXTRA HOME SECTIONS
+========================================= */
 
-body::after {
-    content: "";
+html {
+  scroll-behavior: smooth;
+}
 
-    position: fixed;
+.reveal {
+  opacity: 0;
+  transform: translateY(70px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
 
-    width: 380px;
-    height: 380px;
-
-    right: -150px;
-    bottom: 5%;
-
-    border-radius: 50%;
-
-    background: rgba(190, 190, 190, 0.3);
-
-    filter: blur(25px);
-
-    pointer-events: none;
-
-    z-index: -1;
-
-    animation: floatingCircleReverse 12s ease-in-out infinite;
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 
-@keyframes floatingCircle {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(35px);
-    }
-}
-
-
-@keyframes floatingCircleReverse {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-40px);
-    }
-}
-
-
-/* =========================================================
-   NAVBAR - GLASS
-========================================================= */
-
-.navbar {
-    position: sticky !important;
-
-    top: 12px;
-
-    z-index: 1000;
-
-    width: min(1200px, 94%);
-
-    margin: 12px auto 0;
-
-    padding: 8px 15px;
-
-    background: rgba(255, 255, 255, 0.42) !important;
-
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-
-    border: 1px solid rgba(255, 255, 255, 0.7);
-
-    border-radius: 18px;
-
-    box-shadow:
-        0 12px 35px rgba(0, 0, 0, 0.08),
-        inset 0 1px 0 rgba(255, 255, 255, 0.85);
-
-    transition:
-        background 0.3s ease,
-        box-shadow 0.3s ease,
-        transform 0.3s ease;
-}
-
-
-.navbar:hover {
-    background: rgba(255, 255, 255, 0.52) !important;
-
-    box-shadow:
-        0 16px 40px rgba(0, 0, 0, 0.11),
-        inset 0 1px 0 rgba(255, 255, 255, 0.95);
-}
-
-
-.navbar-brand {
-    color: #222 !important;
-
-    font-size: 1.3rem;
-
-    font-weight: 800;
-
-    letter-spacing: -0.7px;
-
-    transition:
-        transform 0.3s ease,
-        opacity 0.3s ease;
-}
-
-
-.navbar-brand:hover {
-    transform: translateY(-2px);
-
-    opacity: 0.65;
-}
-
-
-.nav-link {
-    color: #333 !important;
-
-    font-weight: 600;
-
-    padding: 9px 14px !important;
-
-    margin: 0 3px;
-
-    border-radius: 10px;
-
-    transition:
-        background 0.25s ease,
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-}
-
-
-.nav-link:hover {
-    background: rgba(255, 255, 255, 0.55);
-
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 5px 15px rgba(0, 0, 0, 0.06);
-}
-
-
-/* =========================================================
-   DROPDOWN
-========================================================= */
-
-.dropdown-menu {
-    margin-top: 10px !important;
-
-    padding: 8px;
-
-    background: rgba(245, 245, 245, 0.72) !important;
-
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-
-    border: 1px solid rgba(255, 255, 255, 0.7);
-
-    border-radius: 16px;
-
-    box-shadow:
-        0 18px 40px rgba(0, 0, 0, 0.12),
-        inset 0 1px 0 rgba(255, 255, 255, 0.8);
-}
-
-
-.dropdown-item {
-    color: #333;
-
-    font-weight: 500;
-
-    border-radius: 10px;
-
-    padding: 10px 13px;
-
-    transition:
-        background 0.2s ease,
-        transform 0.2s ease;
-}
-
-
-.dropdown-item:hover {
-    background: rgba(255, 255, 255, 0.65);
-
-    color: #111;
-
-    transform: translateX(4px);
-}
-
-
-/* =========================================================
-   HOME
-========================================================= */
-
-.home {
-    width: min(1120px, 92%);
-
-    margin: 0 auto;
-
-    padding-bottom: 90px;
-}
-
-
-/* =========================================================
+/* =========================================
    HERO
-========================================================= */
+========================================= */
 
 .hero {
-    position: relative;
-
-    min-height: 75vh;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    padding: 80px 0;
-
-    animation: heroAppear 1s ease both;
+  position: relative;
+  min-height: 82vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
 }
 
-
-.hero::before {
-    content: "";
-
-    position: absolute;
-
-    width: 380px;
-    height: 380px;
-
-    right: -130px;
-    top: 80px;
-
-    border-radius: 50%;
-
-    background: rgba(255, 255, 255, 0.5);
-
-    filter: blur(12px);
-
-    z-index: -1;
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
 }
 
-
-.hero::after {
-    content: "";
-
-    position: absolute;
-
-    width: 220px;
-    height: 220px;
-
-    left: 30%;
-    bottom: 10px;
-
-    border-radius: 50%;
-
-    background: rgba(210, 210, 210, 0.25);
-
-    filter: blur(15px);
-
-    z-index: -1;
+.eyebrow,
+.section-heading > span,
+.stats-intro > span,
+.reservation-cta > div > span,
+.social-section > span {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #777;
 }
-
 
 .hero h1 {
-    max-width: 900px;
-
-    margin: 0 0 25px;
-
-    font-size: clamp(2.7rem, 7vw, 5.5rem);
-
-    line-height: 1;
-
-    font-weight: 800;
-
-    letter-spacing: -4px;
-
-    color: #202020;
+  margin: 0;
+  font-size: clamp(3rem, 7vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+  font-weight: 800;
 }
-
 
 .hero h1 span {
-    color: #666;
+  display: block;
+  background: linear-gradient(
+    135deg,
+    #111,
+    #777
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
 
 .hero p {
-    max-width: 760px;
+  max-width: 620px;
+  margin: 32px auto;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #666;
+}
 
-    margin-bottom: 30px;
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
 
-    font-size: 1.15rem;
+.btn-main,
+.btn-secondary,
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
 
-    line-height: 1.8;
+.btn-main {
+  background: #171717;
+  color: white;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
 
-    color: #555;
+.btn-main:hover {
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.btn-secondary {
+  border: 1px solid rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.45);
+  color: #222;
+  backdrop-filter: blur(15px);
+}
+
+.btn-secondary:hover {
+  color: #111;
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.8);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  color: #888;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.scroll-indicator span {
+  width: 1px;
+  height: 35px;
+  background: #888;
+  animation: scrollLine 1.8s infinite;
+}
+
+@keyframes scrollLine {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scaleY(0.5);
+    transform-origin: top;
+  }
+
+  50% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
 }
 
 
-@keyframes heroAppear {
+/* =========================================
+   SECTION HEADINGS
+========================================= */
 
-    from {
-        opacity: 0;
+.info-section,
+.timeline-section,
+.program-section,
+.stats-section {
+  padding: 110px 0;
+}
 
-        transform: translateY(35px);
-    }
+.section-heading h2,
+.stats-intro h2 {
+  margin: 0;
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
 
-    to {
-        opacity: 1;
+.section-heading h2 em,
+.stats-intro h2 em,
+.reservation-cta h2 em,
+.social-section h2 em {
+  font-style: normal;
+  color: #777;
+}
 
-        transform: translateY(0);
-    }
+.centered {
+  text-align: center;
 }
 
 
-/* =========================================================
-   GLASS CARDS
-========================================================= */
+/* =========================================
+   FEATURE CARDS
+========================================= */
 
-.klasa1,
-.klasa2,
-.klasa3,
-.klasa5,
-.klasa6 {
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 55px;
+}
 
-    position: relative;
+.feature-card {
+  min-height: 280px;
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,0.7);
+  border-radius: 26px;
+  background: rgba(255,255,255,0.42);
+  backdrop-filter: blur(22px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+  transition: 0.35s ease;
+}
 
-    margin: 40px 0;
+.feature-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255,255,255,0.7);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.1);
+}
 
-    padding: 45px;
+.feature-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+  border-radius: 16px;
+  background: #181818;
+  color: white;
+  font-size: 1.3rem;
+}
 
-    overflow: hidden;
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+}
 
-    background: rgba(255, 255, 255, 0.38);
-
-    backdrop-filter: blur(22px);
-    -webkit-backdrop-filter: blur(22px);
-
-    border: 1px solid rgba(255, 255, 255, 0.7);
-
-    border-radius: 28px;
-
-    box-shadow:
-        0 18px 45px rgba(0, 0, 0, 0.07),
-        inset 0 1px 0 rgba(255, 255, 255, 0.85);
-
-    transition:
-        transform 0.45s ease,
-        background 0.45s ease,
-        box-shadow 0.45s ease;
+.feature-card p {
+  margin: 0;
+  color: #707070;
+  line-height: 1.7;
 }
 
 
-/* sjaj preko kartice */
+/* =========================================
+   STATS
+========================================= */
 
-.klasa1::after,
-.klasa2::after,
-.klasa3::after,
-.klasa5::after,
-.klasa6::after {
+.stats-section {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 80px;
+  align-items: center;
+}
 
-    content: "";
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
 
-    position: absolute;
+.stat-card {
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: 25px;
+  background: #191919;
+  color: white;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+}
 
-    width: 180px;
-    height: 180px;
+.stat-card strong {
+  display: block;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  letter-spacing: -0.06em;
+}
 
-    right: -80px;
-    top: -80px;
-
-    border-radius: 50%;
-
-    background: rgba(255, 255, 255, 0.35);
-
-    filter: blur(5px);
-
-    pointer-events: none;
+.stat-card span {
+  display: block;
+  margin-top: 10px;
+  color: #aaa;
+  font-size: 0.8rem;
+  line-height: 1.4;
 }
 
 
-/* hover */
+/* =========================================
+   TIMELINE
+========================================= */
 
-.klasa1:hover,
-.klasa2:hover,
-.klasa3:hover,
-.klasa5:hover,
-.klasa6:hover {
+.timeline {
+  max-width: 850px;
+  margin: 70px auto 0;
+}
 
-    transform: translateY(-10px);
+.timeline-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 30px;
+  padding: 35px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
 
-    background: rgba(255, 255, 255, 0.53);
+.timeline-item:hover {
+  padding-left: 15px;
+}
 
-    box-shadow:
-        0 28px 60px rgba(0, 0, 0, 0.12),
-        inset 0 1px 0 rgba(255, 255, 255, 0.95);
+.timeline-number {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #999;
+  letter-spacing: 0.15em;
+}
+
+.timeline-item h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.timeline-item p {
+  margin: 0;
+  color: #777;
+  line-height: 1.7;
 }
 
 
-/* =========================================================
-   CARD TITLES
-========================================================= */
+/* =========================================
+   PROGRAMS
+========================================= */
 
-.klasa1 h1,
-.klasa2 h1,
-.klasa3 h1,
-.klasa5 h1,
-.klasa6 h1 {
+.program-comparison {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 60px;
+}
 
-    position: relative;
+.program-card {
+  position: relative;
+  padding: 45px;
+  border-radius: 32px;
+  background: rgba(255,255,255,0.45);
+  border: 1px solid rgba(255,255,255,0.8);
+  backdrop-filter: blur(25px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.07);
+  transition: 0.4s ease;
+}
 
-    z-index: 2;
+.program-card:hover {
+  transform: translateY(-8px);
+}
 
-    margin: 0 0 20px;
+.program-card.featured {
+  background: #191919;
+  color: white;
+}
 
-    font-size: clamp(1.9rem, 4vw, 2.7rem);
+.program-badge {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: white;
+  color: #222;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
 
-    line-height: 1.15;
+.program-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  color: #888;
+}
 
-    font-weight: 800;
+.program-top i {
+  font-size: 1.8rem;
+}
 
-    letter-spacing: -1.5px;
+.program-card h3 {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+}
 
-    color: #222;
+.program-card > p {
+  color: #777;
+  line-height: 1.8;
+  max-width: 500px;
+}
+
+.program-card.featured > p {
+  color: #aaa;
+}
+
+.program-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.program-card li {
+  display: flex;
+  gap: 10px;
+  margin: 13px 0;
+}
+
+.program-card li i {
+  color: #777;
+}
+
+.program-card > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.program-card > a i {
+  transition: 0.3s ease;
+}
+
+.program-card > a:hover i {
+  transform: translate(4px, -4px);
 }
 
 
-/* =========================================================
-   CARD TEXT
-========================================================= */
+/* =========================================
+   QUOTE
+========================================= */
 
-.klasa1 p,
-.klasa2 p,
-.klasa3 p,
-.klasa5 p,
-.klasa6 p {
+.quote-section {
+  margin: 100px 0;
+  padding: 100px 30px;
+  text-align: center;
+  border-radius: 35px;
+  background: #191919;
+  color: white;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.15);
+}
 
-    position: relative;
+.quote-mark {
+  font-family: Georgia, serif;
+  font-size: 6rem;
+  line-height: 0.5;
+  color: #666;
+}
 
-    z-index: 2;
+.quote-section blockquote {
+  max-width: 800px;
+  margin: 25px auto;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
 
-    margin: 0;
-
-    color: #555;
-
-    font-size: 1rem;
-
-    line-height: 1.85;
-
-    transition:
-        transform 0.35s ease,
-        color 0.35s ease;
+.quote-section > span {
+  color: #999;
 }
 
 
-.klasa1:hover p,
-.klasa2:hover p,
-.klasa3:hover p,
-.klasa5:hover p,
-.klasa6:hover p {
+/* =========================================
+   RESERVATION CTA
+========================================= */
 
-    transform: translateX(5px);
+.reservation-cta {
+  position: relative;
+  overflow: hidden;
+  margin: 60px 0;
+  padding: 90px;
+  border-radius: 35px;
+  background:
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(255,255,255,0.12),
+      transparent 35%
+    ),
+    #181818;
+  color: white;
+}
 
-    color: #444;
+.reservation-cta h2 {
+  margin: 0;
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.reservation-cta p {
+  max-width: 580px;
+  margin: 30px 0;
+  color: #aaa;
+  line-height: 1.8;
+}
+
+.cta-button {
+  background: white;
+  color: #111;
+  font-weight: 700;
+}
+
+.cta-button:hover {
+  color: #111;
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(255,255,255,0.15);
 }
 
 
-/* =========================================================
-   ANIMACIJE SEKCIJA
-========================================================= */
-
-.klasa1 {
-    animation: slideLeft 0.8s ease both;
-}
-
-
-.klasa2 {
-    animation: slideRight 0.8s ease both;
-}
-
-
-.klasa3 {
-    animation: slideLeft 0.8s ease both;
-}
-
-
-.klasa5 {
-    animation: slideLeft 0.8s ease both;
-}
-
-
-.klasa6 {
-    animation: slideRight 0.8s ease both;
-}
-
-
-@keyframes slideLeft {
-
-    from {
-        opacity: 0;
-
-        transform: translateX(-90px);
-    }
-
-    to {
-        opacity: 1;
-
-        transform: translateX(0);
-    }
-}
-
-
-@keyframes slideRight {
-
-    from {
-        opacity: 0;
-
-        transform: translateX(90px);
-    }
-
-    to {
-        opacity: 1;
-
-        transform: translateX(0);
-    }
-}
-
-
-/* =========================================================
-   GUMBI - GLASS
-========================================================= */
-
-button {
-
-    border: 1px solid rgba(255, 255, 255, 0.7);
-
-    background: rgba(35, 35, 35, 0.82);
-
-    backdrop-filter: blur(10px);
-
-    color: white;
-
-    padding: 13px 25px;
-
-    border-radius: 14px;
-
-    font-family: inherit;
-
-    font-size: 0.95rem;
-
-    font-weight: 700;
-
-    cursor: pointer;
-
-    box-shadow:
-        0 8px 22px rgba(0, 0, 0, 0.14);
-
-    transition:
-        transform 0.3s ease,
-        background 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-
-button:hover {
-
-    background: rgba(55, 55, 55, 0.95);
-
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 15px 30px rgba(0, 0, 0, 0.2);
-}
-
-
-button:active {
-
-    transform: translateY(-1px) scale(0.98);
-}
-
-
-/* =========================================================
-   HERO BUTTON
-========================================================= */
-
-.hero button {
-
-    width: fit-content;
-
-    padding: 14px 28px;
-
-    font-size: 1rem;
-}
-
-
-/* =========================================================
-   REZERVACIJE
-========================================================= */
-
-.rezervacije {
-
-    position: relative;
-
-    margin-top: 70px;
-
-    padding: 55px;
-
-    overflow: hidden;
-
-    background: rgba(30, 30, 30, 0.88);
-
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-
-    border: 1px solid rgba(255, 255, 255, 0.18);
-
-    border-radius: 28px;
-
-    box-shadow:
-        0 25px 55px rgba(0, 0, 0, 0.18);
-}
-
-
-.rezervacije::before {
-
-    content: "";
-
-    position: absolute;
-
-    width: 250px;
-    height: 250px;
-
-    top: -120px;
-    right: -80px;
-
-    border-radius: 50%;
-
-    background: rgba(255, 255, 255, 0.08);
-
-    filter: blur(10px);
-}
-
-
-.rezervacije h1 {
-
-    position: relative;
-
-    z-index: 2;
-
-    color: white;
-}
-
-
-.rezervacije p {
-
-    position: relative;
-
-    z-index: 2;
-
-    color: #d1d1d1;
-}
-
-
-/* =========================================================
-   SOCIAL SECTION
-========================================================= */
+/* =========================================
+   SOCIAL
+========================================= */
 
 .social-section {
-
-    position: relative;
-
-    margin-top: 80px;
-
-    padding: 70px 30px;
-
-    text-align: center;
-
-    overflow: hidden;
-
-    background: rgba(255, 255, 255, 0.35);
-
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-
-    border: 1px solid rgba(255, 255, 255, 0.7);
-
-    border-radius: 28px;
-
-    box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.08),
-        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  margin: 100px 0 40px;
+  padding: 80px 30px;
+  text-align: center;
+  border-radius: 35px;
+  background: rgba(255,255,255,0.4);
+  border: 1px solid rgba(255,255,255,0.8);
+  backdrop-filter: blur(25px);
 }
 
-
-.social-section::before {
-
-    content: "";
-
-    position: absolute;
-
-    width: 280px;
-    height: 280px;
-
-    top: -130px;
-    right: -90px;
-
-    border-radius: 50%;
-
-    background: rgba(255, 255, 255, 0.45);
-
-    filter: blur(15px);
+.social-section h2 {
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
 }
-
-
-.social-section::after {
-
-    content: "";
-
-    position: absolute;
-
-    width: 220px;
-    height: 220px;
-
-    bottom: -120px;
-    left: -70px;
-
-    border-radius: 50%;
-
-    background: rgba(190, 190, 190, 0.25);
-
-    filter: blur(15px);
-}
-
-
-.social-content {
-
-    position: relative;
-
-    z-index: 2;
-
-    max-width: 600px;
-
-    margin: auto;
-}
-
-
-.social-small {
-
-    margin: 0 0 10px;
-
-    color: #777 !important;
-
-    font-size: 0.75rem !important;
-
-    font-weight: 800;
-
-    letter-spacing: 3px;
-}
-
-
-.social-content h2 {
-
-    margin: 0 0 15px;
-
-    color: #222;
-
-    font-size: clamp(2.1rem, 5vw, 3.3rem);
-
-    font-weight: 800;
-
-    letter-spacing: -2px;
-}
-
-
-.social-content > p:not(.social-small) {
-
-    margin-bottom: 30px;
-
-    color: #666;
-
-    font-size: 1rem;
-}
-
-
-/* =========================================================
-   SOCIAL ICONS
-========================================================= */
 
 .social-icons {
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 35px;
 }
-
 
 .social-icons a {
-
-    width: 54px;
-    height: 54px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    color: #333;
-
-    text-decoration: none;
-
-    font-size: 1.35rem;
-
-    background: rgba(255, 255, 255, 0.42);
-
-    backdrop-filter: blur(15px);
-
-    border: 1px solid rgba(255, 255, 255, 0.8);
-
-    border-radius: 50%;
-
-    box-shadow:
-        0 8px 20px rgba(0, 0, 0, 0.07),
-        inset 0 1px 0 rgba(255, 255, 255, 0.9);
-
-    transition:
-        transform 0.3s ease,
-        background 0.3s ease,
-        box-shadow 0.3s ease,
-        color 0.3s ease;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(255,255,255,0.9);
+  color: #222;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
-
 
 .social-icons a:hover {
-
-    transform: translateY(-8px) scale(1.1);
-
-    background: rgba(255, 255, 255, 0.75);
-
-    color: #111;
-
-    box-shadow:
-        0 15px 30px rgba(0, 0, 0, 0.13);
+  transform: translateY(-7px) rotate(-5deg);
+  background: #191919;
+  color: white;
 }
 
 
-/* =========================================================
+/* =========================================
    FOOTER
-========================================================= */
+========================================= */
 
 .footer {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    gap: 20px;
-
-    margin-top: 35px;
-
-    padding: 25px 5px;
-
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0 30px;
+  color: #777;
 }
 
+.footer strong,
+.footer span {
+  display: block;
+}
+
+.footer strong {
+  color: #222;
+  font-size: 1.1rem;
+}
+
+.footer span {
+  margin-top: 5px;
+  font-size: 0.75rem;
+}
 
 .footer p {
-
-    margin: 0;
-
-    color: #777;
-
-    font-size: 0.8rem;
+  margin: 0;
+  font-size: 0.75rem;
 }
 
 
-/* =========================================================
-   SELECTION
-========================================================= */
+/* =========================================
+   MOBILE
+========================================= */
 
-::selection {
+@media (max-width: 900px) {
 
-    background: #333;
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    color: white;
+  .stats-section {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
 }
 
+@media (max-width: 700px) {
 
-/* =========================================================
-   SCROLLBAR
-========================================================= */
+  .hero {
+    min-height: 75vh;
+  }
 
-::-webkit-scrollbar {
+  .hero h1 {
+    font-size: clamp(3rem, 14vw, 5rem);
+  }
 
-    width: 9px;
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .feature-grid,
+  .program-comparison,
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-section,
+  .timeline-section,
+  .program-section,
+  .stats-section {
+    padding: 75px 0;
+  }
+
+  .feature-card {
+    min-height: auto;
+  }
+
+  .program-card {
+    padding: 30px;
+  }
+
+  .program-top {
+    margin-bottom: 45px;
+  }
+
+  .reservation-cta {
+    padding: 55px 30px;
+  }
+
+  .quote-section {
+    padding: 70px 25px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 55px 1fr;
+    gap: 15px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
 }
-
-
-::-webkit-scrollbar-track {
-
-    background: #e5e5e5;
-}
-
-
-::-webkit-scrollbar-thumb {
-
-    background: #aaa;
-
-    border-radius: 20px;
-}
-
-
-::-webkit-scrollbar-thumb:hover {
-
-    background: #777;
-}
-
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 768px) {
-
-    .navbar {
-
-        width: 94%;
-
-        top: 7px;
-
-        margin-top: 7px;
-
-        border-radius: 15px;
-    }
-
-
-    .home {
-
-        width: 92%;
-    }
-
-
-    .hero {
-
-        min-height: 65vh;
-
-        padding: 60px 0;
-    }
-
-
-    .hero h1 {
-
-        font-size: clamp(2.5rem, 11vw, 4rem);
-
-        letter-spacing: -2.5px;
-    }
-
-
-    .hero p {
-
-        font-size: 1rem;
-
-        line-height: 1.7;
-    }
-
-
-    .klasa1,
-    .klasa2,
-    .klasa3,
-    .klasa5,
-    .klasa6 {
-
-        padding: 32px 25px;
-
-        border-radius: 22px;
-
-        margin: 28px 0;
-    }
-
-
-    .klasa1 h1,
-    .klasa2 h1,
-    .klasa3 h1,
-    .klasa5 h1,
-    .klasa6 h1 {
-
-        font-size: 2rem;
-    }
-
-
-    .rezervacije {
-
-        padding: 35px 25px;
-
-        border-radius: 22px;
-    }
-
-
-    .social-section {
-
-        padding: 55px 20px;
-
-        border-radius: 22px;
-    }
-
-
-    .navbar-collapse {
-
-        padding: 12px 0;
-    }
-
-
-    .nav-link {
-
-        margin: 3px 0;
-    }
-}
-
-
-/* =========================================================
-   MOBITEL
-========================================================= */
 
 @media (max-width: 480px) {
 
-    .home {
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
 
-        width: 94%;
-    }
+  .btn-main,
+  .btn-secondary {
+    justify-content: center;
+    width: 100%;
+  }
 
+  .social-icons {
+    gap: 9px;
+  }
 
-    .hero {
+  .social-icons a {
+    width: 48px;
+    height: 48px;
+  }
 
-        min-height: 60vh;
-
-        padding: 45px 0;
-    }
-
-
-    .hero h1 {
-
-        font-size: 2.35rem;
-
-        letter-spacing: -1.8px;
-    }
-
-
-    .hero p {
-
-        font-size: 0.95rem;
-
-        line-height: 1.7;
-    }
-
-
-    .klasa1,
-    .klasa2,
-    .klasa3,
-    .klasa5,
-    .klasa6 {
-
-        padding: 27px 19px;
-
-        border-radius: 19px;
-    }
-
-
-    .klasa1 h1,
-    .klasa2 h1,
-    .klasa3 h1,
-    .klasa5 h1,
-    .klasa6 h1 {
-
-        font-size: 1.7rem;
-    }
-
-
-    .klasa1 p,
-    .klasa2 p,
-    .klasa3 p,
-    .klasa5 p,
-    .klasa6 p {
-
-        font-size: 0.94rem;
-
-        line-height: 1.75;
-    }
-
-
-    .rezervacije {
-
-        padding: 30px 20px;
-
-        border-radius: 20px;
-    }
-
-
-    .social-section {
-
-        margin-top: 50px;
-
-        padding: 45px 15px;
-
-        border-radius: 20px;
-    }
-
-
-    .social-content h2 {
-
-        font-size: 2.3rem;
-    }
-
-
-    .social-icons {
-
-        gap: 9px;
-    }
-
-
-    .social-icons a {
-
-        width: 47px;
-        height: 47px;
-
-        font-size: 1.15rem;
-    }
-
-
-    .footer {
-
-        flex-direction: column;
-
-        text-align: center;
-
-        gap: 5px;
-    }
 }
-
-
-/* =========================================================
-   ACCESSIBILITY
-========================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-
-        animation-duration: 0.01ms !important;
-
-        animation-iteration-count: 1 !important;
-
-        transition-duration: 0.01ms !important;
-
-        scroll-behavior: auto !important;
-    }
-}
->>>>>>> Stashed changes
