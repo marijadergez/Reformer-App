@@ -43,7 +43,7 @@ export default function Izbornik() {
                             <NavDropdown.Divider />
 
                             <NavDropdown.Item href="#action/3.4">
-                                Separated link
+                                Rezerviraj termin
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>

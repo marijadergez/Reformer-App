@@ -5,9 +5,10 @@ import { RouteNames } from './constants'
 import Home from './pages/Home';
 import Individualni from './pages/Individualni/Individualni';
 import Izbornik from './components/Izbornik'
-import { IME_APLIKACIJE } from './constants'
+
 import Grupni from './pages/Grupni/Grupni';
 import './App.css'
+import Rezervacije from './pages/Rezervacije/Rezervacije';
 
 
 
@@ -21,13 +22,15 @@ function App() {
           <Route path={RouteNames.HOME} element={<Home />} />
           <Route path={RouteNames.INDIVIDUALNI} element={<Individualni />} />
           <Route path={RouteNames.GRUPNI} element={<Grupni />} />
+          <Route path={RouteNames.REZERVACIJE} element={<Rezervacije />} />
         </Routes>
       </Container>
       <hr />
       <div className="text-center">
         &copy; {new Date().getFullYear()} | MDergez, obrt za usluge | R App
-        
       </div>
+      
+      
     </>
   )
 }

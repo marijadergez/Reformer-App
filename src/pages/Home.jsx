@@ -1,6 +1,8 @@
 import { IME_APLIKACIJE } from "../constants"
 import Grupni from "./Grupni/Grupni"
 import Individualni from "./Individualni/Individualni"
+import Rezervacije from "./Rezervacije/Rezervacije"
+
 
 export default function HOME() {
     return (
@@ -77,12 +79,15 @@ export default function HOME() {
             </div>
 
             <div className="klasa4">
+
             </div>
 
 
               <Grupni />
 
             <Individualni />
+
+            <Rezervacije />
         </>
     )
 }
