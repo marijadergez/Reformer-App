@@ -7,7 +7,7 @@ import Individualni from './pages/Individualni/Individualni';
 import Izbornik from './components/Izbornik'
 
 import Grupni from './pages/Grupni/Grupni';
-import './App.css'
+
 import Rezervacije from './pages/Rezervacije/Rezervacije';
 
 

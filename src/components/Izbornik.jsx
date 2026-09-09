@@ -1,6 +1,7 @@
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import {IME_APLIKACIJE, RouteNames} from '../constants'
 import { useNavigate } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
 
 export default function Izbornik() {
 
@@ -39,10 +40,11 @@ export default function Izbornik() {
 
                             <NavDropdown.Divider />
 
-                            <NavDropdown.Item 
+                            <NavDropdown.Item
                             onClick={()=>navigate(RouteNames.REZERVACIJE)}
                             >Rezervacije</NavDropdown.Item>
 
+                           
 
                         </NavDropdown>
                     </Nav>
