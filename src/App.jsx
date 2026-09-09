@@ -7,7 +7,7 @@ import Individualni from './pages/Individualni/Individualni';
 import Izbornik from './components/Izbornik'
 import { IME_APLIKACIJE } from './constants'
 import Grupni from './pages/Grupni/Grupni';
-
+import './App.css'
 
 
 
