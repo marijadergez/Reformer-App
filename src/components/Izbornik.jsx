@@ -20,6 +20,9 @@ export default function Izbornik() {
 
                 <Navbar.Collapse id="basic-navbar-nav">
 
+                                 
+          
+
                     <Nav className="ms-auto">
 
                         <Nav.Link
@@ -28,7 +31,7 @@ export default function Izbornik() {
                             Početna
                         </Nav.Link>
 
-                        <NavDropdown
+              <NavDropdown
                             title="Reformer"
                             id="reformer-dropdown"
                         >

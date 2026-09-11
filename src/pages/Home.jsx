@@ -75,7 +75,7 @@ function HOME() {
 
         <div className="hero-content">
           <span className="eyebrow">
-            • FITNESS • REFORMER • 
+            • FITNESS • PILATES • PERSONAL
           </span>
 
           <h1>
