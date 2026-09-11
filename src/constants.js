@@ -1,4 +1,4 @@
-export const IME_APLIKACIJE = 'Reformer App'
+export const IME_APLIKACIJE = 'Reformer Centar Osijek '
 
 
 export const RouteNames = {

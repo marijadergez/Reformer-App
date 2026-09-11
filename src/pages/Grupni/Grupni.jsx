@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 export default function GRUPNI() {
     return (
         <main className="page-wrapper">
+
             <section className="page-card reveal show">
 
                 <div className="page-header">
@@ -82,6 +83,64 @@ export default function GRUPNI() {
                 </div>
 
             </section>
+
+
+            {/* SOCIAL PODSJETNIK */}
+
+            <section className="social-reminder">
+
+                <span>OSTANIMO U POKRETU</span>
+
+                <h2>
+                    Ono što se događa u studiju,
+                    <br />
+                    <em>ne ostaje uvijek samo u studiju.</em>
+                </h2>
+
+                <p>Pratite nas.</p>
+
+                <div className="social-links">
+
+                    <a
+                        href="https://instagram.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Instagram"
+                    >
+                        <i className="bi bi-instagram"></i>
+                    </a>
+
+                    <a
+                        href="https://facebook.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Facebook"
+                    >
+                        <i className="bi bi-facebook"></i>
+                    </a>
+
+                    <a
+                        href="https://tiktok.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="TikTok"
+                    >
+                        <i className="bi bi-tiktok"></i>
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            {/* FOOTER */}
+
+            <footer className="site-footer">
+                <div className="footer-content">
+                    <p>© 2026 Reformer Centar | MDergez</p>
+                </div>
+            </footer>
+
         </main>
     )
 }

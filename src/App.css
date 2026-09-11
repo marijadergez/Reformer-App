@@ -368,6 +368,7 @@ a {
 
   margin-bottom: 12px;
 
+
   color: var(--accent-dark);
 
   font-size: 0.75rem;
@@ -477,7 +478,9 @@ a {
   width: 100%;
   max-width: 900px;
 
-  margin: auto;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
 
   overflow: hidden;
 
@@ -561,7 +564,9 @@ a {
 /* =========================================================
    PROGRAMI
    ========================================================= */
-
+.program-section {
+  padding-top: 80px;
+}
 .program-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1186,4 +1191,149 @@ a {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+/* =========================================================
+   SOCIAL PODSJETNIK - INDIVIDUAL / GRUPNI
+   ========================================================= */
+
+.social-reminder {
+  width: 100%;
+  padding: 90px 20px 80px;
+  text-align: center;
+}
+
+.social-reminder > * {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-reminder > span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: var(--text-soft);
+
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+}
+
+.social-reminder h2 {
+  margin: 0 auto 18px;
+
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.08;
+}
+
+.social-reminder h2 em {
+  font-weight: 400;
+}
+
+.social-reminder p {
+  margin: 0;
+  color: var(--text-soft);
+}
+
+.social-reminder .social-links {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  width: 100%;
+
+  margin: 28px auto 0;
+}
+
+.social-reminder .social-links a {
+  width: 62px;
+  height: 62px;
+
+  min-width: 62px;
+  min-height: 62px;
+
+  flex: 0 0 62px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+ 
+
+  margin: 0;
+
+  border: 1px solid var(--border);
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.65);
+
+  color: var(--accent-dark);
+
+  font-size: 1.6rem;
+
+  box-shadow: 0 10px 30px rgba(40, 50, 46, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.social-reminder .social-links a i {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.social-reminder .social-links a:hover {
+  transform: translateY(-5px) scale(1.05);
+
+  background: var(--accent);
+  color: white;
+
+  box-shadow: 0 15px 35px rgba(83, 105, 96, 0.22);
+}
+
+
+/* MOBITEL */
+
+@media (max-width: 480px) {
+  .social-reminder {
+    padding: 70px 20px 65px;
+  }
+
+  .social-reminder h2 {
+    font-size: 2rem;
+  }
+
+  .social-reminder .social-links {
+    gap: 14px;
+  }
+
+  .social-reminder .social-links a {
+    width: 56px;
+    height: 56px;
+
+    min-width: 56px;
+    min-height: 56px;
+
+    flex-basis: 56px;
+
+    font-size: 1.4rem;
+  }
+
+  .social-reminder .social-links a i {
+    font-size: 1.4rem;
+  }
+}
+.social-reminder p {
+  width: 100%;
+  margin: 0 auto;
+  color: var(--text-soft);
+  text-align: center;
 }

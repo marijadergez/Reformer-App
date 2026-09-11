@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { IME_APLIKACIJE } from "../constants";
-import Grupni from "./Grupni/Grupni";
-import Individualni from "./Individualni/Individualni";
 import Rezervacije from "./Rezervacije/Rezervacije";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -57,17 +55,14 @@ const Stat = ({ number, label }) => {
   return (
     <div className="stat-card">
       <strong>
-  {count}
-  {(number === "55" || number === "90") && (
-    <small>min</small>
-  )}
-  {number === "1" && "+"}
-</strong>
+        {count}
+        {(number === "55" || number === "90") && <small>min</small>}
+        {number === "1" && "+"}
+      </strong>
 
       <span>{label}</span>
     </div>
   );
-
 };
 
 function HOME() {
@@ -80,7 +75,7 @@ function HOME() {
 
         <div className="hero-content">
           <span className="eyebrow">
-            PILATES • REFORMER • MOVEMENT
+            FITNESS • REFORMER • MOVEMENT
           </span>
 
           <h1>
@@ -117,6 +112,7 @@ function HOME() {
         <section id="zasto-reformer" className="info-section">
           <div className="section-heading">
             <span>01 / ZAŠTO REFORMER?</span>
+
             <h2>
               Više od treninga.
               <br />
@@ -130,40 +126,51 @@ function HOME() {
               <div className="feature-icon">
                 <i className="bi bi-person-arms-up"></i>
               </div>
+
               <h3>Svjesniji pokret</h3>
+
               <p>
                 Učimo kako pravilno izvoditi pokrete i bolje razumjeti
                 vlastito tijelo.
               </p>
             </article>
 
+
             <article className="feature-card">
               <div className="feature-icon">
                 <i className="bi bi-lightning-charge"></i>
               </div>
+
               <h3>Snaga i stabilnost</h3>
+
               <p>
                 Kontrolirani pokreti aktiviraju mišiće i grade funkcionalnu
                 snagu.
               </p>
             </article>
 
+
             <article className="feature-card">
               <div className="feature-icon">
                 <i className="bi bi-bullseye"></i>
               </div>
+
               <h3>Individualni pristup</h3>
+
               <p>
                 Vježbe se prilagođavaju tvojoj razini, mogućnostima i
                 ciljevima.
               </p>
             </article>
 
+
             <article className="feature-card">
               <div className="feature-icon">
                 <i className="bi bi-heart-pulse"></i>
               </div>
+
               <h3>Kontrola tijela</h3>
+
               <p>
                 Fokus nije samo na izgledu, već na kvalitetnijem i sigurnijem
                 kretanju.
@@ -181,6 +188,7 @@ function HOME() {
 
           <div className="stats-intro">
             <span>NAŠ PRISTUP</span>
+
             <h2>
               Malo drugačiji
               <br />
@@ -188,11 +196,24 @@ function HOME() {
             </h2>
           </div>
 
-                  <div className="stats-grid">
-                      <Stat number="55" unit="min" label="individualnog treninga" />
-                      <Stat number="90" unit="min" label="grupnog programa" />
-                      <Stat number="1" unit="" label="reformer po treningu" />
-                  </div>
+          <div className="stats-grid">
+
+            <Stat
+              number="55"
+              label="individualnog treninga"
+            />
+
+            <Stat
+              number="90"
+              label="grupnog programa"
+            />
+
+            <Stat
+              number="1"
+              label="reformer po treningu"
+            />
+
+          </div>
 
         </section>
       </Reveal>
@@ -203,30 +224,39 @@ function HOME() {
         <section className="timeline-section">
 
           <div className="section-heading centered">
+
             <span>02 / KAKO IZGLEDA TRENING?</span>
+
             <h2>
               Od prvog pokreta
               <br />
               do osjećaja <em>lakoće.</em>
             </h2>
+
           </div>
+
 
           <div className="timeline">
 
             <div className="timeline-item">
               <div className="timeline-number">01</div>
+
               <div>
                 <h3>Priprema</h3>
+
                 <p>
                   Kratko zagrijavanje i priprema tijela za kvalitetan pokret.
                 </p>
               </div>
             </div>
 
+
             <div className="timeline-item">
               <div className="timeline-number">02</div>
+
               <div>
                 <h3>Reformer</h3>
+
                 <p>
                   Upoznajemo spravu i kroz kontrolirane pokrete aktiviramo
                   cijelo tijelo.
@@ -234,10 +264,13 @@ function HOME() {
               </div>
             </div>
 
+
             <div className="timeline-item">
               <div className="timeline-number">03</div>
+
               <div>
                 <h3>Glavni dio</h3>
+
                 <p>
                   Fokusiramo se na snagu, stabilnost, mobilnost i pravilnu
                   tehniku.
@@ -245,10 +278,13 @@ function HOME() {
               </div>
             </div>
 
+
             <div className="timeline-item">
               <div className="timeline-number">04</div>
+
               <div>
                 <h3>Smirivanje</h3>
+
                 <p>
                   Trening završavamo kontroliranim pokretima i istezanjem.
                 </p>
@@ -256,6 +292,7 @@ function HOME() {
             </div>
 
           </div>
+
         </section>
       </Reveal>
 
@@ -265,17 +302,23 @@ function HOME() {
         <section className="program-section">
 
           <div className="section-heading">
+
             <span>03 / PROGRAMI</span>
+
             <h2>
               Odaberi ritam koji
               <br />
               <em>odgovara tebi.</em>
             </h2>
+
           </div>
+
 
           <div className="program-comparison">
 
+            {/* INDIVIDUALNI */}
             <div className="program-card">
+
               <div className="program-top">
                 <span>01</span>
                 <i className="bi bi-person"></i>
@@ -289,28 +332,35 @@ function HOME() {
               </p>
 
               <ul>
+
                 <li>
                   <i className="bi bi-check2"></i>
                   55 minuta
                 </li>
+
                 <li>
                   <i className="bi bi-check2"></i>
                   1 osoba na reformeru
                 </li>
+
                 <li>
                   <i className="bi bi-check2"></i>
                   Individualno prilagođene vježbe
                 </li>
+
               </ul>
 
               <a href="#rezervacije">
                 Rezerviraj individualni
                 <i className="bi bi-arrow-up-right"></i>
               </a>
+
             </div>
 
 
+            {/* GRUPNI */}
             <div className="program-card featured">
+
               <div className="program-badge">
                 POPULARNO
               </div>
@@ -328,36 +378,33 @@ function HOME() {
               </p>
 
               <ul>
+
                 <li>
                   <i className="bi bi-check2"></i>
                   Do 90 minuta
                 </li>
+
                 <li>
                   <i className="bi bi-check2"></i>
                   Rad u grupi
                 </li>
+
                 <li>
                   <i className="bi bi-check2"></i>
                   Reformer + prostirka
                 </li>
+
               </ul>
 
               <a href="#rezervacije">
                 Rezerviraj grupni
                 <i className="bi bi-arrow-up-right"></i>
               </a>
+
             </div>
 
           </div>
-        </section>
-      </Reveal>
 
-
-      {/* POSTOJEĆI PROGRAMI */}
-      <Reveal>
-        <section className="existing-programs">
-          <Individualni />
-          <Grupni />
         </section>
       </Reveal>
 
@@ -383,6 +430,7 @@ function HOME() {
         <section id="rezervacije" className="reservation-cta">
 
           <div className="cta-content">
+
             <span>04 / REZERVACIJE</span>
 
             <h2>
@@ -400,13 +448,14 @@ function HOME() {
               Rezerviraj svoj termin
               <i className="bi bi-arrow-right"></i>
             </a>
+
           </div>
 
         </section>
       </Reveal>
 
 
-      {/* POSTOJEĆE REZERVACIJE */}
+      {/* REZERVACIJE - FORMA */}
       <Reveal>
         <Rezervacije />
       </Reveal>
@@ -424,7 +473,7 @@ function HOME() {
             <em>i izvan studija.</em>
           </h2>
 
-          <div className="social-icons">
+          <div className="social-links">
 
             <a
               href="https://instagram.com/"
@@ -453,15 +502,6 @@ function HOME() {
               <i className="bi bi-tiktok"></i>
             </a>
 
-            <a
-              href="https://github.com/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="GitHub"
-            >
-              <i className="bi bi-github"></i>
-            </a>
-
           </div>
 
         </section>
@@ -469,8 +509,11 @@ function HOME() {
 
 
       {/* FOOTER */}
-      <footer className="footer">
+      <footer className="site-footer">
 
+        <div className="footer-content">
+          <p>© 2026 Reformer Centar | MDergez</p>
+        </div>
 
       </footer>
 
