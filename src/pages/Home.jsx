@@ -100,7 +100,7 @@ function HOME() {
           </div>
         </div>
 
-        <div className="scroll-indicator"style={{ fontSize: "14px" }}>
+        <div className="scroll-indicator"style={{ fontSize: "11px" }}>
           <span></span>
           Scroll
         </div>
