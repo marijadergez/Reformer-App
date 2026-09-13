@@ -855,6 +855,73 @@ a {
 }
 
 /* =========================================================
+   IMPRESSUM
+   ========================================================= */
+
+.page-footer {
+  margin-top: 65px;
+}
+
+.page-footer h2 {
+  margin-bottom: 10px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.impressum-content {
+  margin-top: 10px;
+  padding: 16px 18px;
+
+  border: 1px solid rgba(113, 135, 126, 0.18);
+  border-radius: 14px;
+
+  background: rgba(220, 229, 225, 0.55);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 4px 25px;
+}
+
+.impressum-content p {
+  margin: 0;
+  padding: 5px 0;
+
+  color: var(--text-soft);
+
+  text-align: left;
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+
+.impressum-content strong {
+  margin-right: 5px;
+
+  color: var(--text);
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+
+/* =========================================================
+   IMPRESSUM - MOBITEL
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .impressum-content {
+    grid-template-columns: 1fr;
+    gap: 2px;
+    padding: 13px 15px;
+  }
+
+  .impressum-content p {
+    font-size: 0.74rem;
+  }
+
+}
+/* =========================================================
    SOCIAL
    ========================================================= */
 

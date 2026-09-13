@@ -137,7 +137,7 @@ export default function GRUPNI() {
 
             <footer className="site-footer">
                 <div className="footer-content">
-                    <p>© 2026 Reformer Centar | MDergez</p>
+                    <p>© 2026 Reformer Centar | MDergez web solutions </p>
                 </div>
             </footer>
 
