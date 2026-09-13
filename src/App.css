@@ -1,4 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('/fonts/latin-ext-400-normal.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('/fonts/latin-ext-500-normal.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('/fonts/latin-ext-600-normal.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('/fonts/latin-ext-700-normal.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* =========================================================
    REFORMER CENTAR — GLOBAL
@@ -100,7 +130,7 @@ a {
 .site-navbar .navbar-brand {
   color: var(--text) !important;
 
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1.5rem;
   font-weight: 700;
 
@@ -281,7 +311,7 @@ a {
 .hero h1 {
   margin: 0 0 25px;
 
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: clamp(3rem, 7vw, 6rem);
   line-height: 1.05;
   font-weight: 700;
@@ -380,7 +410,7 @@ a {
 .section-header h2 {
   margin-bottom: 15px;
 
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: clamp(2.2rem, 5vw, 4rem);
   line-height: 1.1;
 }
@@ -512,7 +542,7 @@ a {
 
   color: var(--accent-dark);
 
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 3rem;
   font-weight: 700;
 }
@@ -547,7 +577,7 @@ a {
 .timeline-number {
   color: var(--accent);
 
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 2rem;
   font-weight: 700;
 }
@@ -580,8 +610,11 @@ a {
 .program-card h3 {
   margin-bottom: 15px;
 
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #3f4b46;
 }
 
 .program-card p {
@@ -626,7 +659,7 @@ a {
   max-width: 850px;
   margin: auto;
 
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: clamp(2rem, 4vw, 3.5rem);
   line-height: 1.25;
 }
@@ -665,7 +698,7 @@ a {
 .reservation-cta h2 {
   margin-bottom: 15px;
 
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: clamp(2rem, 5vw, 3.5rem);
 }
 
@@ -721,7 +754,7 @@ a {
 .page-header h1 {
   margin: 0;
 
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   line-height: 1.1;
 }
@@ -822,7 +855,7 @@ a {
 .reservation-card h2 {
   margin-bottom: 10px;
 
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1.7rem;
 }
 
@@ -942,7 +975,7 @@ a {
 .social-section h2 {
   margin: 8px auto 15px;
 
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: clamp(2.5rem, 5vw, 4rem);
   line-height: 1.05;
 }
@@ -1289,7 +1322,7 @@ a {
 .social-reminder h2 {
   margin: 0 auto 18px;
 
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: clamp(2rem, 4vw, 3.2rem);
   line-height: 1.08;
 }
@@ -1403,4 +1436,12 @@ a {
   margin: 0 auto;
   color: var(--text-soft);
   text-align: center;
+}
+h1,
+
+h3,
+h4,
+h5,
+h6 {
+  color: #43524a;
 }

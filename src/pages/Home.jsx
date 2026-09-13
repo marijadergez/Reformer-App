@@ -425,11 +425,14 @@ function HOME() {
       </Reveal>
 
 
+
       {/* REZERVACIJE */}
       <Reveal>
         <section id="rezervacije" className="reservation-cta">
 
           <div className="cta-content">
+           
+
 
             <span>04 / REZERVACIJE</span>
 
@@ -453,6 +456,9 @@ function HOME() {
 
         </section>
       </Reveal>
+
+
+<br />
 
 
       {/* REZERVACIJE - FORMA */}
