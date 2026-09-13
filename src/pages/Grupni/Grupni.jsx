@@ -25,11 +25,9 @@ export default function GRUPNI() {
                     <div className="info-card">
                         <i className="bi bi-currency-euro"></i>
                         <h3>Cijena</h3>
-                        <p>20,00 € za 2 osobe</p>
+                        <p>20,00 € za 2 osobe.</p>
                         <small>Cijena uključuje PDV.</small>
-                        <small>Plaćanje karticom moguće je bez
-                            dodatne naknade za korisnika; eventualnu naknadu za
-                            kartično plaćanje snosi studio.</small>
+                        <small></small>
                     </div>
                     <div className="info-card">
                         <i className="bi bi-people"></i>
