@@ -42,6 +42,10 @@ export function RezervacijaSection() {
                         osobno doći u studio kako bismo dogovorili
                         detalje i način plaćanja.
                     </p>
+                       <p>
+                    Trenutno nemamo kontakt formu za rezervaciju grupnim treninga.
+                    Ali radimo na tome.
+                </p>
                 </div>
 
             </div>
@@ -73,12 +77,46 @@ export default function REZERVACIJE() {
                     odmah odgovoriti na vaše upite.
                 </p>
 
-                <p>
-                    Trenutno nemamo kontakt formu za rezervaciju grupnim treninga.
-                    Ali radimo na tome.
-                </p>
+             
 
             </div>
+
+                <div className="address-card">
+                    <strong>Prigovor potrošača</strong>
+
+                    <span>
+                        Pisani prigovor možete podnijeti osobno u poslovnom prostoru,
+                        poštom ili elektroničkom poštom na adresu{' '}
+                        <a href="mailto:mdergez@gmail.com">
+                            mdergez@gmail.com
+                        </a>
+                        . Na zaprimljeni prigovor odgovorit ćemo u zakonom propisanom roku.
+                    </span>
+                </div>
+                <div className="address-card">
+                    <strong>Pravila rezervacije i promjene termina</strong>
+
+                    <span>
+                        Rezervacija termina potvrđuje se nakon izvršenog plaćanja.
+                        Rezervirani termin namijenjen je osobi koja ga je rezervirala
+                        i vrijedi za odabrani datum i vrijeme.
+                        <br /><br />
+
+                        Ako korisnik ne može iskoristiti rezervirani termin, promjenu
+                        termina potrebno je dogovoriti izravno s nama.
+                        Uplaćeni iznos može se, prema dogovoru i raspoloživosti,
+                        iskoristiti za drugi termin.
+                        <br /><br />
+
+                        Novi termin dogovara se prema raspoloživim terminima i
+                        kapacitetu studija. Promjene termina ne provode se automatski
+                        putem sustava za rezervaciju i plaćanje.
+                        <br /><br />
+
+                        Ova pravila ne utječu na prava potrošača koja proizlaze iz
+                        prisilnih odredbi važećih propisa.
+                    </span>
+                </div>
 
                 <footer className="page-footer">
 
