@@ -13,15 +13,24 @@ export default function GRUPNI() {
 
                     <h1>Grupni program</h1>
                 </div>
+              
 
                 <div className="info-grid">
 
                     <div className="info-card">
                         <i className="bi bi-clock"></i>
                         <h3>Trajanje</h3>
-                        <p>Trening traje do 90 minuta.</p>
+                        <p>Trening traje 90 minuta.</p>
                     </div>
-
+                    <div className="info-card">
+                        <i className="bi bi-currency-euro"></i>
+                        <h3>Cijena</h3>
+                        <p>20,00 € za 2 osobe</p>
+                        <small>Cijena uključuje PDV.</small>
+                        <small>Plaćanje karticom moguće je bez
+                            dodatne naknade za korisnika; eventualnu naknadu za
+                            kartično plaćanje snosi studio.</small>
+                    </div>
                     <div className="info-card">
                         <i className="bi bi-people"></i>
                         <h3>Grupni trening</h3>
@@ -40,20 +49,22 @@ export default function GRUPNI() {
                         <p>Fokus na mišićne skupine prema potrebama vježbača.</p>
                     </div>
 
+                 
+
                 </div>
 
                 <div className="page-content">
 
                     <p>
                         U studiju trenutno imamo jednu spravu Reformer na kojoj
-                        se izvode grupni treninzi u trajanju do 90 minuta.
+                        se izvode grupni treninzi u trajanju 90 minuta.
                     </p>
 
                     <p>
-                        Program je prilagođen osobama koje žele dužu pauzu
-                        između vježbi te kombinaciju rada na Reformeru i
+                        Program je prilagođen osobama koje žele kombinaciju rada na Reformeru i
                         funkcionalnog treninga na prostirci uz korištenje
-                        rekvizita.
+                        rekvizita ili  imaju potrebu za dužom pauzom
+                        između vježbi.
                     </p>
 
                     <p>
@@ -79,6 +90,24 @@ export default function GRUPNI() {
                         instruktorskih uputa kako bi vježbanje bilo sigurno
                         i učinkovito.
                     </p>
+
+                    <br />
+
+                       <div className="reservation-card">
+                    <i className="bi bi-people"></i>
+
+                    <h2>Grupni trening</h2>
+
+                    <p>
+                        Za rezervaciju grupnog treninga potrebno je
+                        osobno doći u studio na adresu Blue Gym Centar Osijek, Pavla Pejačevića 22, kako bismo dogovorili
+                        detalje i način plaćanja. 
+                    </p>
+                       <p>
+                    Trenutno nemamo kontakt formu za rezervaciju grupnih treninga.
+                    Ali radimo na tome.
+                </p>
+                </div>
 
                 </div>
 

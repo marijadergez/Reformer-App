@@ -17,12 +17,16 @@ export function RezervacijaSection() {
                 <div className="reservation-card">
                     <i className="bi bi-person-check"></i>
 
-                    <h2>Individualni trening</h2>
+                   <h2>Individualni trening</h2>
 
                     <p>
-                        Rezervaciju termina za individualni trening
-                        možete izvršiti klikom na gumb ili osobnim
-                        dolaskom u studio.
+                        <strong>55 minuta — 11,00 € po osobi</strong>
+                    </p>
+
+                    <p>
+                        Cijena uključuje PDV. Plaćanje karticom moguće je bez
+                        dodatne naknade za korisnika; eventualnu naknadu za
+                        kartično plaćanje snosi studio.
                     </p>
 
                     <br />
@@ -43,7 +47,7 @@ export function RezervacijaSection() {
                         detalje i način plaćanja.
                     </p>
                        <p>
-                    Trenutno nemamo kontakt formu za rezervaciju grupnim treninga.
+                    Trenutno nemamo kontakt formu za rezervaciju grupnih treninga.
                     Ali radimo na tome.
                 </p>
                 </div>
@@ -72,11 +76,7 @@ export default function REZERVACIJE() {
                 
             <div className="page-content">
 
-                <p>
-                    Ako su treninzi u tijeku, nažalost nećemo moći
-                    odmah odgovoriti na vaše upite.
-                </p>
-
+             
              
 
             </div>
@@ -117,6 +117,14 @@ export default function REZERVACIJE() {
                         prisilnih odredbi važećih propisa.
                     </span>
                 </div>
+
+
+
+
+   <p>
+                    Ako su treninzi u tijeku, nažalost nećemo moći
+                    odmah odgovoriti na vaše upite. Stoga odgovor očekujte u što kraćem roku. Hvala na razumijevanju.
+                </p>
 
                 <footer className="page-footer">
 
@@ -169,6 +177,10 @@ export default function REZERVACIJE() {
                         <p>
                             <strong>Telefon:</strong><br />
                             +385911918465
+                        </p>
+                          <p>
+                            <strong>Web:</strong><br />
+                            wwww.mdergez.hr
                         </p>
 
                     </div>

@@ -12,6 +12,9 @@ export default function INDIVIDUALNI() {
 
                     <h1>Osobni program</h1>
                 </div>
+                <button className="page-button">
+                        Rezerviraj termin
+                    </button>
 
                 <div className="info-grid">
 
@@ -20,7 +23,13 @@ export default function INDIVIDUALNI() {
                         <h3>Trajanje</h3>
                         <p>55 minuta individualnog treninga.</p>
                     </div>
-
+                    <div className="info-card">
+                        <i className="bi bi-currency-euro"></i>
+                        <h3>Cijena</h3>
+                        <p>11,00 €</p>
+                        <small>Cijena uključuje PDV.</small>
+                        <small>Bez dodatne naknade za kartično plaćanje korisniku.</small>
+                    </div>
                     <div className="info-card">
                         <i className="bi bi-person"></i>
                         <h3>Individualni pristup</h3>
@@ -64,7 +73,7 @@ export default function INDIVIDUALNI() {
                     </p>
 
                     <p>
-                        Instruktor prati vaš razvoj i prilagođava trening
+                        Vaš razvoj JE praćen i prilagodba treninga ovisi o
                         vašem napretku kako bi vježbanje bilo što sigurnije
                         i učinkovitije.
                     </p>
