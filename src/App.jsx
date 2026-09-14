@@ -12,9 +12,10 @@ import Grupni from './pages/Grupni/Grupni';
 import './App.css'
 import "bootstrap-icons/font/bootstrap-icons.css";
 import REZERVACIJE from './pages/Rezervacije/Rezervacije';
+import PravilaRezervacije from './pages/Pravila rezervacije i otkazivanja/PravilaRezervacije';
+import UvjetiRezervacije from './pages/UvjetiRezervacije/UvjetiRezervacije';
 
-import UvjetiRezervacije from './pages/UvjetiRezervacije/UvjetiRezervacije'
-import PravilaRezervacije from './pages/PravilaRezervacije/PravilaRezervacije'
+
 
 
 
