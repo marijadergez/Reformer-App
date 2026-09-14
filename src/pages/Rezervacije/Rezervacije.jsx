@@ -1,4 +1,3 @@
-
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export function RezervacijaSection() {
@@ -17,24 +16,47 @@ export function RezervacijaSection() {
                 <div className="reservation-card">
                     <i className="bi bi-person-check"></i>
 
-                   <h2>Individualni trening</h2>
+                    <h2>Individualni trening</h2>
 
                     <p>
                         <strong>55 minuta — 11,00 € po osobi</strong>
                     </p>
 
                     <p>
-                        Cijena uključuje PDV. Plaćanje karticom moguće je bez
-                        dodatne naknade za korisnika; eventualnu naknadu za
-                        kartično plaćanje snosi studio.
+                        Cijena usluge uključuje PDV. Plaćanje karticom moguće je
+                        bez dodatne naknade za korisnika; eventualnu naknadu
+                        povezanu s kartičnim plaćanjem snosi Studio.
+                    </p>
+
+                    <p>
+                        Termin se rezervira za odabrani datum i vrijeme, a
+                        rezervacija se potvrđuje nakon izvršenog plaćanja.
                     </p>
 
                     <br />
 
-                    <button className="page-button">
-                        Rezerviraj termin
-                    </button>
+                    <div className="reservation-actions">
+
+                        <a
+                            href="/uvjeti-rezervacije"
+                            className="page-button"
+                        >
+                            Uvjeti rezervacije
+                        </a>
+                        <a
+                            href="/uvjeti-rezervacije"
+                            className="page-button"
+                        >
+                            Uvjeti rezervacije
+                        </a>
+
+                        <button className="page-button">
+                            Rezerviraj termin - 11,00 €
+                        </button>
+
+                    </div>
                 </div>
+
 
                 <div className="reservation-card">
                     <i className="bi bi-people"></i>
@@ -42,30 +64,31 @@ export function RezervacijaSection() {
                     <h2>Grupni trening</h2>
 
                     <p>
-                        Za rezervaciju grupnog treninga potrebno je
-                        osobno doći u studio kako bismo dogovorili
-                        detalje i način plaćanja.
+                        Grupne treninge trenutno je moguće rezervirati osobno
+                        u studiju, uz prethodni dogovor o terminu, broju
+                        sudionika i načinu plaćanja.
                     </p>
-                       <p>
-                    Trenutno nemamo kontakt formu za rezervaciju grupnih treninga.
-                    Ali radimo na tome.
-                </p>
+
+                    <p>
+                        Online rezervacija grupnih treninga trenutno nije
+                        dostupna.
+                    </p>
                 </div>
 
             </div>
 
+
             <div className="address-card">
-                <strong>Gdje se nalazimo?</strong>
+                <strong>Mjesto održavanja treninga</strong>
 
                 <span>
-                    BlueGym Centar Osijek, Pavla Pejačevića 22,
-                    Osijek
+                    BlueGym Centar Osijek, Pavla Pejačevića 22, Osijek
                 </span>
             </div>
-
         </>
     )
 }
+
 
 export default function REZERVACIJE() {
     return (
@@ -73,58 +96,31 @@ export default function REZERVACIJE() {
             <section className="page-card reveal show">
 
                 <RezervacijaSection />
-                
-            <div className="page-content">
 
-             
-             
+                <div className="page-content">
 
-            </div>
+                    <div className="address-card">
+                        <strong>Prigovor potrošača</strong>
 
-                <div className="address-card">
-                    <strong>Prigovor potrošača</strong>
+                        <span>
+                            Pisani prigovor možete podnijeti osobno u
+                            poslovnom prostoru, poštom ili elektroničkom
+                            poštom na adresu{' '}
 
-                    <span>
-                        Pisani prigovor možete podnijeti osobno u poslovnom prostoru,
-                        poštom ili elektroničkom poštom na adresu{' '}
-                        <a href="mailto:mdergez@gmail.com">
-                            mdergez@gmail.com
-                        </a>
-                        . Na zaprimljeni prigovor odgovorit ćemo u zakonom propisanom roku.
-                    </span>
-                </div>
-                <div className="address-card">
-                    <strong>Pravila rezervacije i promjene termina</strong>
+                            <a href="mailto:mdergez@gmail.com">
+                                mdergez@gmail.com
+                            </a>.
 
-                    <span>
-                        Rezervacija termina potvrđuje se nakon izvršenog plaćanja.
-                        Rezervirani termin namijenjen je osobi koja ga je rezervirala
-                        i vrijedi za odabrani datum i vrijeme.
-                        <br /><br />
+                            <br /><br />
 
-                        Ako korisnik ne može iskoristiti rezervirani termin, promjenu
-                        termina potrebno je dogovoriti izravno s nama.
-                        Uplaćeni iznos može se, prema dogovoru i raspoloživosti,
-                        iskoristiti za drugi termin.
-                        <br /><br />
+                            Na zaprimljeni pisani prigovor odgovorit ćemo
+                            u roku od 15 dana od dana njegova zaprimanja,
+                            u skladu s važećim propisima.
+                        </span>
+                    </div>
 
-                        Novi termin dogovara se prema raspoloživim terminima i
-                        kapacitetu studija. Promjene termina ne provode se automatski
-                        putem sustava za rezervaciju i plaćanje.
-                        <br /><br />
-
-                        Ova pravila ne utječu na prava potrošača koja proizlaze iz
-                        prisilnih odredbi važećih propisa.
-                    </span>
                 </div>
 
-
-
-
-   <p>
-                    Ako su treninzi u tijeku, nažalost nećemo moći
-                    odmah odgovoriti na vaše upite. Stoga odgovor očekujte u što kraćem roku. Hvala na razumijevanju.
-                </p>
 
                 <footer className="page-footer">
 
@@ -164,23 +160,27 @@ export default function REZERVACIJE() {
 
                         <p>
                             <strong>Nadležno tijelo:</strong><br />
-                            · Upravni odjel za gospodarstvo i turizam Osječko-baranjske županije
+                            Upravni odjel za gospodarstvo i turizam
+                            Osječko-baranjske županije
                             <br />
-                            · Ministarstvo turizma i sporta
+                            Ministarstvo turizma i sporta
                         </p>
 
                         <p>
                             <strong>E-mail:</strong><br />
-                            mdergez@gmail.com
+                            <a href="mailto:mdergez@gmail.com">
+                                mdergez@gmail.com
+                            </a>
                         </p>
 
                         <p>
                             <strong>Telefon:</strong><br />
-                            +385911918465
+                            +385 91 191 8465
                         </p>
-                          <p>
+
+                        <p>
                             <strong>Web:</strong><br />
-                            wwww.mdergez.hr
+                            www.mdergez.hr
                         </p>
 
                     </div>
@@ -191,4 +191,3 @@ export default function REZERVACIJE() {
         </main>
     )
 }
-

@@ -13,6 +13,9 @@ import './App.css'
 import "bootstrap-icons/font/bootstrap-icons.css";
 import REZERVACIJE from './pages/Rezervacije/Rezervacije';
 
+import UvjetiRezervacije from './pages/UvjetiRezervacije/UvjetiRezervacije'
+import PravilaRezervacije from './pages/PravilaRezervacije/PravilaRezervacije'
+
 
 
 
@@ -26,10 +29,20 @@ function App() {
           <Route path={RouteNames.INDIVIDUALNI} element={<Individualni />} />
           <Route path={RouteNames.GRUPNI} element={<Grupni />} />
           <Route path={RouteNames.REZERVACIJE} element={<REZERVACIJE />} />
+
+          <Route
+            path="/uvjeti-rezervacije"
+            element={<UvjetiRezervacije />}
+          />
+
+          <Route
+            path="/pravila-rezervacije-i-otkazivanja"
+            element={<PravilaRezervacije />}
+          />
         </Routes>
       </Container>
       <hr />
-      
+
     </>
   )
 }
