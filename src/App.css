@@ -1445,3 +1445,65 @@ h5,
 h6 {
   color: #43524a;
 }
+
+/* Gumbi na stranici Rezervacije */
+.reservation-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Svi gumbi/linkovi u reservation-actions */
+.reservation-actions .page-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 11px 18px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Na manjim ekranima svaki gumb ide u svoj red */
+@media (max-width: 600px) {
+    .reservation-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .reservation-actions .page-button {
+        width: 100%;
+    }
+}
+
+.individual-actions {
+    margin-top: 20px;
+}
+
+.individual-actions .page-button {
+    width: 100%;
+}
+
+.legal-links {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.legal-links a {
+    font-size: 0.85rem;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .legal-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+}

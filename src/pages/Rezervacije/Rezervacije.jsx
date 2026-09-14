@@ -43,15 +43,16 @@ export function RezervacijaSection() {
                         >
                             Uvjeti rezervacije
                         </a>
+
                         <a
-                            href="/uvjeti-rezervacije"
+                            href="/pravila-rezervacije-i-otkazivanja"
                             className="page-button"
                         >
-                            Uvjeti rezervacije
+                            Pravila rezervacije i otkazivanja
                         </a>
 
                         <button className="page-button">
-                            Rezerviraj termin - 11,00 €
+                            Rezerviraj termin — 11,00 €
                         </button>
 
                     </div>

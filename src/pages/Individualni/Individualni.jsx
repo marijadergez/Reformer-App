@@ -12,9 +12,23 @@ export default function INDIVIDUALNI() {
 
                     <h1>Osobni program</h1>
                 </div>
-                <button className="page-button">
+                <div className="individual-actions">
+
+                    <button className="page-button">
                         Rezerviraj termin
                     </button>
+
+                    <div className="legal-links">
+                        <a href="/uvjeti-rezervacije">
+                            Uvjeti rezervacije
+                        </a>
+
+                        <a href="/pravila-rezervacije-i-otkazivanja">
+                            Pravila rezervacije i otkazivanja
+                        </a>
+                    </div>
+
+                </div>
 
                 <div className="info-grid">
 
