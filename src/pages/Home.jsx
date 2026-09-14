@@ -518,7 +518,7 @@ function HOME() {
       <footer className="site-footer">
 
         <div className="footer-content">
-          <p>© 2026 Reformer Centar | MDergez web solutions</p>
+          <p>© 2026 Reformer Centar App | MDergez App solutions</p>
         </div>
 
       </footer>
