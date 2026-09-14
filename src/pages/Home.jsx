@@ -476,7 +476,7 @@ function HOME() {
           <h2>
             Pratite nas
             <br />
-            <em>i izvan studija.</em>
+            <em>i izvan Centra.</em>
           </h2>
 
           <div className="social-links">

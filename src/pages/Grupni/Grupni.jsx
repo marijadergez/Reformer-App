@@ -6,7 +6,7 @@ export default function GRUPNI() {
 
             <section className="page-card reveal show">
 
-                <div className="page-header">
+                <div className="page-header module-header">
                     <span className="page-eyebrow">
                         Reformer Centar
                     </span>
@@ -54,7 +54,7 @@ export default function GRUPNI() {
                 <div className="page-content">
 
                     <p>
-                        U studiju trenutno imamo jednu spravu Reformer na kojoj
+                        U Reformer Centru trenutno imamo jednu spravu Reformer na kojoj
                         se izvode grupni treninzi u trajanju 90 minuta.
                     </p>
 
@@ -98,7 +98,7 @@ export default function GRUPNI() {
 
                     <p>
                         Za rezervaciju grupnog treninga potrebno je
-                        osobno doći u studio na adresu Blue Gym Centar Osijek, Pavla Pejačevića 22, kako bismo dogovorili
+                        osobno doći u Reformer Centar, na adresu Blue Gym Centar Osijek, Pavla Pejačevića 22, kako bismo dogovorili
                         detalje i način plaćanja. 
                     </p>
                        <p>
@@ -119,9 +119,9 @@ export default function GRUPNI() {
                 <span>OSTANIMO U POKRETU</span>
 
                 <h2>
-                    Ono što se događa u studiju,
+                    Ono što se događa u  Centru,
                     <br />
-                    <em>ne ostaje uvijek samo u studiju.</em>
+                    <em>ne ostaje uvijek samo u  Centru.</em>
                 </h2>
 
                 <p>Pratite nas.</p>

@@ -66,7 +66,7 @@ export default function PravilaRezervacije() {
 
                         <p>
                             Ako korisnik želi promijeniti rezervirani termin,
-                            potrebno je javiti se izravno Studiju odnosno
+                            potrebno je javiti se izravno Reformer Centru odnosno
                             doći u Studio radi dogovora o drugom terminu.
                         </p>
 
@@ -154,7 +154,7 @@ export default function PravilaRezervacije() {
                         <p>
                             Ako Studio u pojedinom slučaju izvan svoje
                             zakonske obveze odobri povrat uplaćenog iznosa,
-                            povrat se izvršava osobno u Studiju.
+                            povrat se izvršava osobno u Centru.
                         </p>
 
                         <p>

@@ -25,7 +25,7 @@ export function RezervacijaSection() {
                     <p>
                         Cijena usluge uključuje PDV. Plaćanje karticom moguće je
                         bez dodatne naknade za korisnika; eventualnu naknadu
-                        povezanu s kartičnim plaćanjem snosi Studio.
+                        povezanu s kartičnim plaćanjem snosi Reformer Centar.
                     </p>
 
                     <p>
@@ -66,7 +66,7 @@ export function RezervacijaSection() {
 
                     <p>
                         Grupne treninge trenutno je moguće rezervirati osobno
-                        u studiju, uz prethodni dogovor o terminu, broju
+                        u Reformer Centru uz prethodni dogovor o terminu, broju
                         sudionika i načinu plaćanja.
                     </p>
 
@@ -83,7 +83,7 @@ export function RezervacijaSection() {
                 <strong>Mjesto održavanja treninga</strong>
 
                 <span>
-                    BlueGym Centar Osijek, Pavla Pejačevića 22, Osijek
+                    BlueGym Centar Osijek, Reformer Centar, Pavla Pejačevića 22, Osijek
                 </span>
             </div>
         </>

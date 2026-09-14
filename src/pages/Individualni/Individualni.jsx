@@ -5,7 +5,7 @@ export default function INDIVIDUALNI() {
         <main className="page-wrapper">
             <section className="page-card reveal show">
 
-                <div className="page-header">
+                <div className="page-header module-header">
                     <span className="page-eyebrow">
                         Reformer Centar
                     </span>
@@ -67,7 +67,7 @@ export default function INDIVIDUALNI() {
                 <div className="page-content">
 
                     <p>
-                        Trenutno u studiju imamo jednu spravu Reformer na kojem
+                        Trenutno u Centru imamo jednu spravu Reformer na kojem
                         se izvode individualni treninzi u privatnom okruženju.
                         Instruktorica prilagođava vježbe vašim mogućnostima,
                         potrebama i ciljevima.
@@ -120,9 +120,9 @@ export default function INDIVIDUALNI() {
                 <span>OSTANIMO U POKRETU</span>
 
                 <h2>
-                    Ono što se događa u studiju,
+                    Ono što se događa u  Centru,
                     <br />
-                    <em>ne ostaje uvijek samo u studiju.</em>
+                    <em>ne ostaje uvijek samo u  Centru.</em>
                 </h2>
 
                 <p>Pratite nas.</p>

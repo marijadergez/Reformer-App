@@ -153,7 +153,7 @@ export default function UvjetiRezervacije() {
 
                         <p>
                             Ako korisnik želi promijeniti termin, potrebno je
-                            javiti se izravno Studiju odnosno doći u Studio
+                            javiti se izravno Reformer Centru odnosno doći u Reformer Centar
                             radi dogovora o drugom terminu.
                         </p>
 
