@@ -34,7 +34,7 @@ export default function UvjetiRezervacije() {
                         </p>
 
                         <p>
-                            <strong>BlueGym Centar Osijek</strong><br />
+                            <strong>BlueGym Centar Osijek,Reformer Centar</strong><br />
                             Pavla Pejačevića 22, Osijek
                         </p>
 
@@ -43,7 +43,6 @@ export default function UvjetiRezervacije() {
                             rezervacije i Pravila rezervacije i otkazivanja.
                         </p>
                     </section>
-
 
                     <section className="content-section">
                         <h2>2. Usluga i cijena</h2>
@@ -67,7 +66,6 @@ export default function UvjetiRezervacije() {
                             prilikom rezervacije, ovisno o dostupnosti termina.
                         </p>
                     </section>
-
 
                     <section className="content-section">
                         <h2>3. Rezervacija termina</h2>
@@ -103,7 +101,6 @@ export default function UvjetiRezervacije() {
                         </p>
                     </section>
 
-
                     <section className="content-section">
                         <h2>4. Plaćanje</h2>
 
@@ -125,7 +122,6 @@ export default function UvjetiRezervacije() {
                         </p>
                     </section>
 
-
                     <section className="content-section">
                         <h2>5. Potvrda rezervacije</h2>
 
@@ -140,7 +136,6 @@ export default function UvjetiRezervacije() {
                             rezervirane usluge i termina.
                         </p>
                     </section>
-
 
                     <section className="content-section">
                         <h2>6. Promjena i otkazivanje termina</h2>
@@ -166,8 +161,8 @@ export default function UvjetiRezervacije() {
                         <p>
                             Promjena termina nije automatski zajamčena.
                             Zamjenski termin može se dogovoriti samo ako
-                            postoji odgovarajući slobodan termin i ako Studio
-                            odobri promjenu.
+                            postoji odgovarajući slobodan termin i ako
+                            Reformer Centar odobri promjenu.
                         </p>
 
                         <p>
@@ -202,7 +197,6 @@ export default function UvjetiRezervacije() {
                         </p>
                     </section>
 
-
                     <section className="content-section">
                         <h2>7. Otkazivanje termina od strane pružatelja usluge</h2>
 
@@ -217,7 +211,6 @@ export default function UvjetiRezervacije() {
                             na način propisan važećim propisima.
                         </p>
                     </section>
-
 
                     <section className="content-section">
                         <h2>8. Pravo potrošača na jednostrani raskid</h2>
@@ -239,10 +232,9 @@ export default function UvjetiRezervacije() {
                         <p>
                             Ova odredba ne isključuje niti ograničava druga
                             prava potrošača koja se prema prisilnim propisima
-                            ne mogu isključiti ili ograničiti.
+                            ne mogu isključiti niti ograničiti.
                         </p>
                     </section>
-
 
                     <section className="content-section">
                         <h2>9. Prigovor potrošača</h2>
@@ -265,9 +257,39 @@ export default function UvjetiRezervacije() {
                         </p>
                     </section>
 
+                    <section className="content-section">
+                        <h2>10. Snimanje i objava sadržaja</h2>
+
+                        <p>
+                            Snimanje fotografija i/ili videozapisa tijekom
+                            treninga te njihova eventualna objava na
+                            društvenim mrežama ili drugim promotivnim kanalima
+                            nije dio postupka rezervacije i nije uvjet za
+                            korištenje usluge.
+                        </p>
+
+                        <p>
+                            Ako se tijekom pojedinog treninga planira
+                            fotografiranje ili snimanje na kojem je korisnik
+                            prepoznatljiv, za takvo snimanje i eventualnu
+                            objavu korisnik daje zasebnu i dobrovoljnu privolu
+                            u Reformer Centru.
+                        </p>
+
+                        <p>
+                            Odbijanje davanja takve privole ne utječe na pravo
+                            korisnika da koristi ugovorenu uslugu.
+                        </p>
+
+                        <p>
+                            Način obrade osobnih podataka povezanih sa
+                            snimanjem i objavom uređen je Politikom privatnosti.
+                        </p>
+ž
+                    </section>
 
                     <section className="content-section">
-                        <h2>10. Završne odredbe</h2>
+                        <h2>11. Završne odredbe</h2>
 
                         <p>
                             Na pitanja koja nisu uređena ovim Uvjetima

@@ -27,8 +27,8 @@ export default function Izbornik() {
 
                         <Nav.Link
                             onClick={() => navigate(RouteNames.HOME)}
-                        >
-                            Početna
+                        > <strong> Početna</strong>
+                           
                         </Nav.Link>
 
               <NavDropdown

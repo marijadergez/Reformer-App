@@ -26,6 +26,9 @@ export default function INDIVIDUALNI() {
                         <a href="/pravila-rezervacije-i-otkazivanja">
                             Pravila rezervacije i otkazivanja
                         </a>
+                        <a href="/privatnost">
+    Politika privatnosti
+</a>
                     </div>
 
                 </div>

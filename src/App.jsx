@@ -5,7 +5,7 @@ import { RouteNames } from './constants'
 import Home from './pages/Home';
 import Individualni from './pages/Individualni/Individualni';
 import Izbornik from './components/Izbornik'
-import { IME_APLIKACIJE } from './constants'
+
 import Grupni from './pages/Grupni/Grupni';
 
 
@@ -14,6 +14,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import REZERVACIJE from './pages/Rezervacije/Rezervacije';
 import PravilaRezervacije from './pages/Pravila rezervacije i otkazivanja/PravilaRezervacije';
 import UvjetiRezervacije from './pages/UvjetiRezervacije/UvjetiRezervacije';
+import Privatnost from './pages/Privatnost/Privatnost';
 
 
 
@@ -40,6 +41,10 @@ function App() {
             path="/pravila-rezervacije-i-otkazivanja"
             element={<PravilaRezervacije />}
           />
+          <Route
+    path="/privatnost"
+    element={<Privatnost />}
+/>
         </Routes>
       </Container>
       <hr />

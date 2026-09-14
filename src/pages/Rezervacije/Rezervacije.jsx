@@ -1,3 +1,4 @@
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export function RezervacijaSection() {
@@ -11,80 +12,91 @@ export function RezervacijaSection() {
                 <h1>Rezervacije termina</h1>
             </div>
 
-            <div className="reservation-grid">
+            {/* Individualni trening */}
+            <div className="reservation-card">
 
-                <div className="reservation-card">
-                    <i className="bi bi-person-check"></i>
+                <i className="bi bi-person-check"></i>
 
-                    <h2>Individualni trening</h2>
+                <h2>Individualni trening</h2>
 
-                    <p>
-                        <strong>55 minuta — 11,00 € po osobi</strong>
-                    </p>
+                <p>
+                    <strong>55 minuta — 11,00 € po osobi</strong>
+                </p>
 
-                    <p>
-                        Cijena usluge uključuje PDV. Plaćanje karticom moguće je
-                        bez dodatne naknade za korisnika; eventualnu naknadu
-                        povezanu s kartičnim plaćanjem snosi Reformer Centar.
-                    </p>
+                <p>
+                    Cijena usluge uključuje PDV. Plaćanje karticom moguće je
+                    bez dodatne naknade za korisnika; eventualnu naknadu
+                    povezanu s kartičnim plaćanjem snosi Reformer Centar.
+                </p>
 
-                    <p>
-                        Termin se rezervira za odabrani datum i vrijeme, a
-                        rezervacija se potvrđuje nakon izvršenog plaćanja.
-                    </p>
+                <p>
+                    Termin se rezervira za odabrani datum i vrijeme, a
+                    rezervacija se potvrđuje nakon izvršenog plaćanja.
+                </p>
 
-                    <br />
+                <div className="reservation-actions">
 
-                    <div className="reservation-actions">
+                    <button className="page-button">
+                        Rezerviraj termin — 11,00 €
+                    </button>
 
-                        <a
-                            href="/uvjeti-rezervacije"
-                            className="page-button"
-                        >
-                            Uvjeti rezervacije
-                        </a>
+                    <a
+                        href="/uvjeti-rezervacije"
+                        className="legal-button"
+                    >
+                        Uvjeti rezervacije
+                    </a>
 
-                        <a
-                            href="/pravila-rezervacije-i-otkazivanja"
-                            className="page-button"
-                        >
-                            Pravila rezervacije i otkazivanja
-                        </a>
+                    <a
+                        href="/pravila-rezervacije-i-otkazivanja"
+                        className="legal-button"
+                    >
+                        Pravila rezervacije i otkazivanja
+                    </a>
 
-                        <button className="page-button">
-                            Rezerviraj termin — 11,00 €
-                        </button>
+                    <a
+                        href="/privatnost"
+                        className="legal-button"
+                    >
+                        Politika privatnosti
+                    </a>
 
-                    </div>
-                </div>
-
-
-                <div className="reservation-card">
-                    <i className="bi bi-people"></i>
-
-                    <h2>Grupni trening</h2>
-
-                    <p>
-                        Grupne treninge trenutno je moguće rezervirati osobno
-                        u Reformer Centru uz prethodni dogovor o terminu, broju
-                        sudionika i načinu plaćanja.
-                    </p>
-
-                    <p>
-                        Online rezervacija grupnih treninga trenutno nije
-                        dostupna.
-                    </p>
                 </div>
 
             </div>
 
 
+            {/* Grupni trening */}
+            <div className="reservation-card">
+
+                <i className="bi bi-people"></i>
+
+                <h2>Grupni trening</h2>
+
+                <p>
+                    Grupne treninge trenutno je moguće rezervirati osobno
+                    u Reformer Centru uz prethodni dogovor o terminu, broju
+                    sudionika i načinu plaćanja.
+                </p>
+
+                <p>
+                    Online rezervacija grupnih treninga trenutno nije
+                    dostupna.
+                </p>
+
+            </div>
+
+
+            {/* Mjesto održavanja */}
             <div className="address-card">
+
                 <strong>Mjesto održavanja treninga</strong>
 
                 <span>
-                    BlueGym Centar Osijek, Reformer Centar, Pavla Pejačevića 22, Osijek
+                    BlueGym Centar Osijek, Reformer Centar,
+                    Pavla Pejačevića 22, Osijek
                 </span>
+
             </div>
         </>
     )
@@ -94,6 +106,7 @@ export function RezervacijaSection() {
 export default function REZERVACIJE() {
     return (
         <main className="page-wrapper">
+
             <section className="page-card reveal show">
 
                 <RezervacijaSection />
@@ -101,6 +114,7 @@ export default function REZERVACIJE() {
                 <div className="page-content">
 
                     <div className="address-card">
+
                         <strong>Prigovor potrošača</strong>
 
                         <span>
@@ -118,6 +132,7 @@ export default function REZERVACIJE() {
                             u roku od 15 dana od dana njegova zaprimanja,
                             u skladu s važećim propisima.
                         </span>
+
                     </div>
 
                 </div>
@@ -189,6 +204,8 @@ export default function REZERVACIJE() {
                 </footer>
 
             </section>
+
         </main>
     )
 }
+
