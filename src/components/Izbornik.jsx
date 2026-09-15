@@ -1,4 +1,5 @@
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+
+import { Container, Nav, Navbar } from "react-bootstrap";
 import { IME_APLIKACIJE, RouteNames } from "../constants";
 import { useNavigate } from "react-router-dom";
 
@@ -20,48 +21,37 @@ export default function Izbornik() {
 
                 <Navbar.Collapse id="basic-navbar-nav">
 
-                                 
-          
-
                     <Nav className="ms-auto">
 
                         <Nav.Link
                             onClick={() => navigate(RouteNames.HOME)}
-                        > <strong> Početna</strong>
-                           
+                        >
+                            <strong>Početna</strong>
                         </Nav.Link>
 
-              <NavDropdown
-                            title="Reformer"
-                            id="reformer-dropdown"
+                        <Nav.Link
+                            onClick={() =>
+                                navigate(RouteNames.INDIVIDUALNI)
+                            }
                         >
-                            <NavDropdown.Item
-                                onClick={() =>
-                                    navigate(RouteNames.INDIVIDUALNI)
-                                }
-                            >
-                                Individualni
-                            </NavDropdown.Item>
+                            Individualni treninzi
+                        </Nav.Link>
 
-                            <NavDropdown.Item
-                                onClick={() =>
-                                    navigate(RouteNames.GRUPNI)
-                                }
-                            >
-                                Grupni
-                            </NavDropdown.Item>
+                        <Nav.Link
+                            onClick={() =>
+                                navigate(RouteNames.GRUPNI)
+                            }
+                        >
+                            Grupni treninzi
+                        </Nav.Link>
 
-                            <NavDropdown.Divider />
-
-                            <NavDropdown.Item
-                                onClick={() =>
-                                    navigate(RouteNames.REZERVACIJE)
-                                }
-                            >
-                                Rezervacije
-                            </NavDropdown.Item>
-
-                        </NavDropdown>
+                        <Nav.Link
+                            onClick={() =>
+                                navigate(RouteNames.REZERVACIJE)
+                            }
+                        >
+                            Rezervacije
+                        </Nav.Link>
 
                     </Nav>
 
@@ -71,3 +61,4 @@ export default function Izbornik() {
         </Navbar>
     );
 }
+
