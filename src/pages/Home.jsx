@@ -1,15 +1,14 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
 
-import { IME_APLIKACIJE } from "../constants";
+import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 
-/* =========================
-   REVEAL ANIMATION
-========================= */
+/* =========================================================
+   REVEAL
+   ========================================================= */
 
 const Reveal = ({ children, className = "" }) => {
   const ref = useRef(null);
@@ -40,18 +39,18 @@ const Reveal = ({ children, className = "" }) => {
 };
 
 
-/* =========================
+/* =========================================================
    HOME
-========================= */
+   ========================================================= */
 
 function HOME() {
 
   useEffect(() => {
     document.title =
-      "Reformer Centar Osijek | Individualni i grupni Reformer treninzi";
+      "Reformer Centar Osijek | Reformer treninzi u Osijeku";
 
     const description =
-      "Reformer Centar Osijek nudi individualne i grupne Reformer treninge. Pokret, snaga, stabilnost i individualni pristup u Osijeku.";
+      "Reformer Centar Osijek nudi individualne i grupne reformer treninge. Individualni trening 55 min – 11,00 €, grupni trening 90 min – 20,00 € za 2 osobe.";
 
     let meta = document.querySelector(
       'meta[name="description"]'
@@ -63,7 +62,7 @@ function HOME() {
       document.head.appendChild(meta);
     }
 
-    meta.content = description;
+    meta.setAttribute("content", description);
   }, []);
 
 
@@ -71,9 +70,14 @@ function HOME() {
     <main className="home">
 
 
-      {/* =========================
-          HERO
-      ========================= */}
+      {/* =====================================================
+          01 / HERO
+
+          ŠTO?
+          GDJE?
+          KOLIKO?
+          ŠTO DALJE?
+          ===================================================== */}
 
       <section className="hero">
 
@@ -81,40 +85,60 @@ function HOME() {
 
         <div className="hero-content">
 
-          <span className="eyebrow">
+          <span className="hero-eyebrow">
             REFORMER CENTAR • OSIJEK
           </span>
 
           <h1>
             Reformer trening
             <br />
-            za <em>bolji odnos</em>
-            <br />
-            prema tijelu.
+            u <em>Osijeku.</em>
           </h1>
 
           <p>
-            Individualni i grupni Reformer treninzi u Osijeku,
-            usmjereni na snagu, stabilnost, mobilnost i kvalitetnije
-            kretanje.
+            Individualni i grupni reformer treninzi
+            usmjereni na snagu, stabilnost, mobilnost
+            i kvalitetnije kretanje.
           </p>
 
-          <div className="hero-buttons">
+
+          {/* CIJENE SU NAMJERNO VIDLJIVE ODMAH */}
+
+          <div className="mb-4">
+
+            <div className="d-flex flex-column flex-md-row justify-content-center gap-2 gap-md-4">
+
+              <span>
+                <strong>Individualni</strong>
+                {" "}• 55 min • <strong>11,00 €</strong>
+              </span>
+
+              <span>
+                <strong>Grupni</strong>
+                {" "}• 90 min • <strong>20,00 € za 2 osobe</strong>
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div className="d-flex flex-column flex-sm-row justify-content-center gap-3">
 
             <Link
               to="/rezervacije"
-              className="btn-main"
+              className="home-button"
             >
               Rezerviraj termin
-              <i className="bi bi-arrow-right"></i>
+              <i className="bi bi-arrow-right ms-2"></i>
             </Link>
 
-            <Link
-              to="/individualni"
-              className="btn-secondary"
+            <a
+              href="#programi"
+              className="home-button home-button-outline"
             >
-              Saznaj više
-            </Link>
+              Pogledaj programe
+            </a>
 
           </div>
 
@@ -133,53 +157,45 @@ function HOME() {
 
 
 
-      {/* =========================
-          INTRO / ZAŠTO REFORMER
-      ========================= */}
+      {/* =====================================================
+          02 / ZAŠTO REFORMER
+
+          SAMO TRI JASNE KORISTI.
+          NEMA PONAVLJANJA PROGRAMA.
+          ===================================================== */}
 
       <Reveal>
 
         <section
           id="zasto-reformer"
-          className="info-section"
+          className="section"
         >
 
-          <div className="section-heading">
+          <div className="section-header">
 
-            <span>
+            <span className="section-eyebrow">
               01 / ZAŠTO REFORMER?
             </span>
 
             <h2>
-              Više od treninga.
+              Jednostavno.
               <br />
-              <em>Bolji odnos prema tijelu.</em>
+              <em>Kontrolirano.</em>
             </h2>
+
+            <p>
+              Trening na reformeru omogućuje kontroliran rad
+              i prilagodbu vježbi različitim razinama
+              i ciljevima.
+            </p>
 
           </div>
 
 
           <div className="feature-grid">
 
-            <article className="feature-card">
 
-              <div className="feature-icon">
-                <i className="bi bi-person-arms-up"></i>
-              </div>
-
-              <h3>
-                Svjesniji pokret
-              </h3>
-
-              <p>
-                Učimo kako pravilno izvoditi pokrete i bolje
-                razumjeti vlastito tijelo.
-              </p>
-
-            </article>
-
-
-            <article className="feature-card">
+            <article className="feature-card glass-card">
 
               <div className="feature-icon">
                 <i className="bi bi-lightning-charge"></i>
@@ -190,14 +206,32 @@ function HOME() {
               </h3>
 
               <p>
-                Kontrolirani pokreti aktiviraju mišiće i grade
-                funkcionalnu snagu.
+                Kontrolirani pokreti omogućuju kvalitetan rad
+                na snazi, stabilnosti i funkcionalnom kretanju.
               </p>
 
             </article>
 
 
-            <article className="feature-card">
+            <article className="feature-card glass-card">
+
+              <div className="feature-icon">
+                <i className="bi bi-person-arms-up"></i>
+              </div>
+
+              <h3>
+                Kontrola pokreta
+              </h3>
+
+              <p>
+                Fokus je na preciznijem izvođenju pokreta
+                i boljem razumijevanju vlastitog tijela.
+              </p>
+
+            </article>
+
+
+            <article className="feature-card glass-card">
 
               <div className="feature-icon">
                 <i className="bi bi-bullseye"></i>
@@ -208,29 +242,12 @@ function HOME() {
               </h3>
 
               <p>
-                Vježbe se prilagođavaju tvojoj razini,
-                mogućnostima i ciljevima.
+                Vježbe i intenzitet prilagođavaju se tvojoj
+                razini, mogućnostima i ciljevima.
               </p>
 
             </article>
 
-
-            <article className="feature-card">
-
-              <div className="feature-icon">
-                <i className="bi bi-heart-pulse"></i>
-              </div>
-
-              <h3>
-                Kontrola tijela
-              </h3>
-
-              <p>
-                Fokus je na kvalitetnijem, kontroliranom i
-                sigurnijem kretanju.
-              </p>
-
-            </article>
 
           </div>
 
@@ -240,18 +257,23 @@ function HOME() {
 
 
 
-      {/* =========================
-          PROGRAMI
-      ========================= */}
+      {/* =====================================================
+          03 / PROGRAMI I CIJENE
+
+          OVDJE KORISNIK DONOSI ODLUKU.
+          ===================================================== */}
 
       <Reveal>
 
-        <section className="program-section">
+        <section
+          id="programi"
+          className="section"
+        >
 
-          <div className="section-heading">
+          <div className="section-header">
 
-            <span>
-              02 / PROGRAMI
+            <span className="section-eyebrow">
+              02 / PROGRAMI I CIJENE
             </span>
 
             <h2>
@@ -260,116 +282,119 @@ function HOME() {
               koji <em>odgovara tebi.</em>
             </h2>
 
+            <p>
+              Dvije opcije treninga, ovisno o tome
+              želiš li individualni pristup ili rad u paru.
+            </p>
+
           </div>
 
 
-          <div className="program-comparison">
+          <div className="program-grid">
 
 
-            {/* INDIVIDUALNI */}
+            {/* =================================================
+                INDIVIDUALNI
+                ================================================= */}
 
-            <article className="program-card">
+            <article className="program-card glass-card">
 
-              <div className="program-top">
-
-                <span>
-                  01
-                </span>
-
-                <i className="bi bi-person"></i>
-
-              </div>
+              <span className="section-eyebrow">
+                01 / INDIVIDUALNI
+              </span>
 
               <h3>
-                Individualni Reformer
+                Individualni reformer trening
               </h3>
 
               <p>
                 Potpuno personaliziran trening uz individualni
-                pristup, prilagođen tvojoj razini, potrebama
-                i ciljevima.
+                pristup i prilagodbu vježbi tvojoj razini,
+                mogućnostima i ciljevima.
               </p>
 
               <ul>
 
                 <li>
-                  <i className="bi bi-check2"></i>
-                  55 minuta
+                  <strong>55 minuta</strong>
                 </li>
 
                 <li>
-                  <i className="bi bi-check2"></i>
-                  1 osoba na reformeru
+                  1 osoba
                 </li>
 
                 <li>
-                  <i className="bi bi-check2"></i>
                   Individualno prilagođene vježbe
                 </li>
 
+                <li>
+                  <strong>11,00 €</strong>
+                </li>
+
               </ul>
 
-              <Link to="/individualni">
+              <Link
+                to="/individualni"
+                className="home-button"
+              >
                 Saznaj više
-                <i className="bi bi-arrow-up-right"></i>
+                <i className="bi bi-arrow-up-right ms-2"></i>
               </Link>
 
             </article>
 
 
 
-            {/* GRUPNI */}
+            {/* =================================================
+                GRUPNI
+                ================================================= */}
 
-            <article className="program-card featured">
+            <article className="program-card glass-card">
 
-              <div className="program-badge">
-                POPULARNO
-              </div>
-
-              <div className="program-top">
-
-                <span>
-                  02
-                </span>
-
-                <i className="bi bi-people"></i>
-
-              </div>
+              <span className="section-eyebrow">
+                02 / GRUPNI
+              </span>
 
               <h3>
-                Grupni Reformer
+                Grupni reformer trening
               </h3>
 
               <p>
-                Dinamičan trening u manjoj grupi uz kombinaciju
-                rada na reformeru, prostirci i rekvizitima.
+                Trening za dvije osobe uz rad na reformeru,
+                prostirci i rekvizitima, uz stručno vođenje
+                tijekom treninga.
               </p>
 
               <ul>
 
                 <li>
-                  <i className="bi bi-check2"></i>
-                  Do 90 minuta
+                  <strong>90 minuta</strong>
                 </li>
 
                 <li>
-                  <i className="bi bi-check2"></i>
-                  Rad u grupi
+                  2 osobe
                 </li>
 
                 <li>
-                  <i className="bi bi-check2"></i>
                   Reformer + prostirka
+                </li>
+
+                <li>
+                  <strong>20,00 € za 2 osobe</strong>
                 </li>
 
               </ul>
 
-              <Link to="/grupni">
+              <Link
+                to="/grupni"
+                className="home-button"
+              >
                 Saznaj više
-                <i className="bi bi-arrow-up-right"></i>
+                <i className="bi bi-arrow-up-right ms-2"></i>
               </Link>
 
             </article>
+
 
           </div>
 
@@ -379,25 +404,34 @@ function HOME() {
 
 
 
-      {/* =========================
-          KAKO IZGLEDA TRENING
-      ========================= */}
+      {/* =====================================================
+          04 / KAKO IZGLEDA TRENING
+
+          KRATKO.
+          NE PONAVLJA PROGRAMSKE INFORMACIJE.
+          ===================================================== */}
 
       <Reveal>
 
-        <section className="timeline-section">
+        <section className="section">
 
-          <div className="section-heading centered">
+          <div className="section-header">
 
-            <span>
+            <span className="section-eyebrow">
               03 / KAKO IZGLEDA TRENING?
             </span>
 
-            <h2>
-              Od prvog pokreta
+                <h2>
+              Pokret koji ima
               <br />
-              do osjećaja <em>lakoće.</em>
+              <em>smisla.</em>
             </h2>
+           
+
+            <p>
+              Svaki trening ima jasan tijek, od pripreme
+              do završnog smirivanja.
+            </p>
 
           </div>
 
@@ -418,14 +452,13 @@ function HOME() {
                 </h3>
 
                 <p>
-                  Kratko zagrijavanje i priprema tijela
-                  za kvalitetan pokret.
+                  Priprema tijela za kvalitetan i kontroliran
+                  trening.
                 </p>
 
               </div>
 
             </div>
-
 
 
             <div className="timeline-item">
@@ -437,18 +470,17 @@ function HOME() {
               <div>
 
                 <h3>
-                  Reformer
+                  Rad na reformeru
                 </h3>
 
                 <p>
-                  Kroz kontrolirane pokrete aktiviramo
-                  cijelo tijelo i upoznajemo rad na spravi.
+                  Uvodimo pokrete i vježbe prilagođene
+                  treningu na reformeru.
                 </p>
 
               </div>
 
             </div>
-
 
 
             <div className="timeline-item">
@@ -464,14 +496,13 @@ function HOME() {
                 </h3>
 
                 <p>
-                  Fokus na snagu, stabilnost, mobilnost
-                  i pravilnu tehniku.
+                  Fokus na kvaliteti pokreta, snazi
+                  i stabilnosti.
                 </p>
 
               </div>
 
             </div>
-
 
 
             <div className="timeline-item">
@@ -504,29 +535,31 @@ function HOME() {
 
 
 
-      {/* =========================
-          OSIJEK / LOKACIJA
-      ========================= */}
+      {/* =====================================================
+          05 / LOKACIJA
+
+          KRATKO I KONKRETNO.
+          ===================================================== */}
 
       <Reveal>
 
-        <section className="info-section">
+        <section className="section">
 
-          <div className="section-heading">
+          <div className="section-header">
 
-            <span>
-              04 / REFORMER CENTAR OSIJEK
+            <span className="section-eyebrow">
+              04 / LOKACIJA
             </span>
 
             <h2>
-              Pokret koji počinje
+              Pronađi nas
               <br />
-              <em>u Osijeku.</em>
+              u <em>Osijeku.</em>
             </h2>
 
             <p>
-              Pronađi program koji ti odgovara i napravi
-              prvi korak prema kvalitetnijem kretanju.
+              Reformer Centar Osijek nalazi se u prostoru
+              BlueGym Centra Osijek.
             </p>
 
           </div>
@@ -535,11 +568,11 @@ function HOME() {
           <div className="address-card">
 
             <strong>
-              Mjesto održavanja treninga
+              Reformer Centar Osijek
             </strong>
 
             <span>
-              BlueGym Centar Osijek, Reformer Centar
+              BlueGym Centar Osijek
               <br />
               Pavla Pejačevića 22, Osijek
             </span>
@@ -552,40 +585,36 @@ function HOME() {
 
 
 
-      {/* =========================
-          CTA
-      ========================= */}
+      {/* =====================================================
+          06 / ZAVRŠNI CTA
+          ===================================================== */}
 
       <Reveal>
 
         <section className="reservation-cta">
 
-          <div className="cta-content">
+          <span>
+            05 / REZERVACIJE
+          </span>
 
-            <span>
-              05 / REZERVACIJE
-            </span>
+          <h2>
+            Vrijeme je da
+            <br />
+            napraviš nešto <em>za sebe.</em>
+          </h2>
 
-            <h2>
-              Vrijeme je da
-              <br />
-              napraviš nešto <em>za sebe.</em>
-            </h2>
+          <p>
+            Odaberi svoj trening i rezerviraj termin
+            u Reformer Centru Osijek.
+          </p>
 
-            <p>
-              Odaberi individualni ili grupni Reformer trening
-              i rezerviraj svoj termin.
-            </p>
-
-            <Link
-              to="/rezervacije"
-              className="cta-button"
-            >
-              Rezerviraj svoj termin
-              <i className="bi bi-arrow-right"></i>
-            </Link>
-
-          </div>
+          <Link
+            to="/rezervacije"
+            className="home-button"
+          >
+            Rezerviraj svoj termin
+            <i className="bi bi-arrow-right ms-2"></i>
+          </Link>
 
         </section>
 
@@ -593,23 +622,21 @@ function HOME() {
 
 
 
-      {/* =========================
-          SOCIAL
-      ========================= */}
+      {/* =====================================================
+          07 / SOCIALS
+
+          NA HOMEU NAMJERNO MANJE.
+          DETALJNI SOCIAL BLOK OSTAVLJAMO NA
+          INDIVIDUALNI / GRUPNI PAGE.
+          ===================================================== */}
 
       <Reveal>
 
-        <section className="social-section">
+        <section className="social-section social-section-home">
 
-          <span>
+          <span className="section-eyebrow">
             OSTANIMO POVEZANI
           </span>
-
-          <h2>
-            Pratite nas
-            <br />
-            <em>i izvan Centra.</em>
-          </h2>
 
           <div className="social-links">
 
@@ -617,7 +644,7 @@ function HOME() {
               href="https://instagram.com/"
               target="_blank"
               rel="noreferrer"
-              aria-label="Instagram"
+              aria-label="Reformer Centar Osijek na Instagramu"
             >
               <i className="bi bi-instagram"></i>
             </a>
@@ -626,7 +653,7 @@ function HOME() {
               href="https://facebook.com/"
               target="_blank"
               rel="noreferrer"
-              aria-label="Facebook"
+              aria-label="Reformer Centar Osijek na Facebooku"
             >
               <i className="bi bi-facebook"></i>
             </a>
@@ -635,7 +662,7 @@ function HOME() {
               href="https://tiktok.com/"
               target="_blank"
               rel="noreferrer"
-              aria-label="TikTok"
+              aria-label="Reformer Centar Osijek na TikToku"
             >
               <i className="bi bi-tiktok"></i>
             </a>
@@ -648,9 +675,9 @@ function HOME() {
 
 
 
-      {/* =========================
+      {/* =====================================================
           FOOTER
-      ========================= */}
+          ===================================================== */}
 
       <footer className="site-footer">
 
