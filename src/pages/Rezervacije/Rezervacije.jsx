@@ -45,21 +45,21 @@ export function RezervacijaSection() {
                         href="/uvjeti-rezervacije"
                         className="legal-button"
                     >
-                        Uvjeti rezervacije
+                       | Uvjeti rezervacije
                     </a>
 
                     <a
                         href="/pravila-rezervacije-i-otkazivanja"
                         className="legal-button"
                     >
-                        Pravila rezervacije i otkazivanja
+                       |  Pravila rezervacije i otkazivanja
                     </a>
 
                     <a
                         href="/privatnost"
                         className="legal-button"
                     >
-                        Politika privatnosti
+                        |  Politika privatnosti
                     </a>
 
                 </div>
