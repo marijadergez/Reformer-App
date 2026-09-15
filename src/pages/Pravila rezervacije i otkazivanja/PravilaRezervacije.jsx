@@ -1,3 +1,4 @@
+
 export default function PravilaRezervacije() {
     return (
         <main className="page-wrapper">
@@ -5,7 +6,7 @@ export default function PravilaRezervacije() {
 
                 <div className="page-header">
                     <span className="page-eyebrow">
-                        Reformer Centar
+                        Reformer Centar Osijek
                     </span>
 
                     <h1>Pravila rezervacije i otkazivanja</h1>
@@ -66,8 +67,8 @@ export default function PravilaRezervacije() {
 
                         <p>
                             Ako korisnik želi promijeniti rezervirani termin,
-                            potrebno je javiti se izravno Reformer Centru odnosno
-                            doći u Studio radi dogovora o drugom terminu.
+                            potrebno je osobno javiti se u Reformer Centru radi
+                            dogovora o drugom terminu.
                         </p>
 
                         <p>
@@ -79,14 +80,15 @@ export default function PravilaRezervacije() {
                         <p>
                             Promjena termina nije automatski zajamčena.
                             Zamjenski termin može se dogovoriti samo ako
-                            postoji odgovarajući slobodan termin i ako Studio
-                            odobri promjenu.
+                            postoji odgovarajući slobodan termin i ako
+                            Reformer Centar odobri promjenu.
                         </p>
 
                         <p>
-                            Korisnik nema pravo samostalno prebaciti rezervaciju
-                            na drugi termin niti prenijeti rezervaciju na
-                            drugu osobu bez prethodnog dogovora sa Studiom.
+                            Korisnik ne može samostalno prebaciti rezervaciju
+                            na drugi termin putem online sustava niti prenijeti
+                            rezervaciju na drugu osobu bez prethodnog dogovora
+                            s Reformer Centrom.
                         </p>
                     </section>
 
@@ -108,9 +110,17 @@ export default function PravilaRezervacije() {
 
                         <p>
                             Ako korisnik više ne može iskoristiti rezervirani
-                            termin, može se javiti Studiju radi dogovora o
-                            mogućoj promjeni termina, pod uvjetima iz ovih
-                            Pravila.
+                            termin, može se osobno javiti u Reformer Centru
+                            radi dogovora o mogućoj promjeni termina, pod
+                            uvjetima iz ovih Pravila.
+                        </p>
+
+                        <p>
+                            Plaćeni iznos iz rezerviranog termina ne prenosi
+                            se automatski na novi termin putem online sustava.
+                            Eventualni zamjenski termin dogovara se osobno u
+                            Reformer Centru, ovisno o okolnostima i dostupnosti
+                            termina.
                         </p>
 
                         <p>
@@ -129,9 +139,16 @@ export default function PravilaRezervacije() {
 
                         <p>
                             Ako korisnik ne dođe na rezervirani termin bez
-                            prethodno dogovorene promjene sa Studiom,
+                            prethodno dogovorene promjene s Reformer Centrom,
                             rezervirani termin se ne može naknadno
-                            iskoristiti za drugi termin.
+                            iskoristiti za drugi termin putem online sustava.
+                        </p>
+
+                        <p>
+                            Ako korisnik želi dogovoriti drugi termin nakon
+                            nedolaska, potrebno je osobno javiti se u
+                            Reformer Centru. Ovisno o okolnostima i dostupnosti,
+                            može se dogovoriti drugi termin.
                         </p>
 
                         <p>
@@ -152,20 +169,28 @@ export default function PravilaRezervacije() {
                         </p>
 
                         <p>
-                            Ako Studio u pojedinom slučaju izvan svoje
-                            zakonske obveze odobri povrat uplaćenog iznosa,
-                            povrat se izvršava osobno u Centru.
+                            Ako korisnik želi dogovoriti drugi termin umjesto
+                            povrata, potrebno je osobno javiti se u Reformer
+                            Centru. Ako postoji mogućnost promjene, uplaćeni
+                            iznos može se, prema dogovoru i dostupnosti,
+                            iskoristiti za drugi termin.
                         </p>
 
                         <p>
-                            Ako je Studio na temelju prisilnih propisa
+                            Ako Reformer Centar u pojedinom slučaju odobri
+                            povrat izvan svoje zakonske obveze, način povrata
+                            dogovorit će se s korisnikom.
+                        </p>
+
+                        <p>
+                            Ako je Reformer Centar na temelju prisilnih propisa
                             obvezan izvršiti povrat, povrat se izvršava na
                             način i pod uvjetima propisanim važećim
                             propisima.
                         </p>
 
                         <p>
-                            Ni jedno pravilo o povratu iz ovih Pravila ne
+                            Nijedno pravilo o povratu iz ovih Pravila ne
                             ograničava pravo potrošača na povrat koje proizlazi
                             iz prisilnih odredbi važećih propisa.
                         </p>
@@ -173,12 +198,13 @@ export default function PravilaRezervacije() {
 
 
                     <section className="content-section">
-                        <h2>7. Otkazivanje termina od strane Studija</h2>
+                        <h2>7. Otkazivanje termina od strane Reformer Centra</h2>
 
                         <p>
-                            Ako Studio mora otkazati već plaćeni termin,
-                            korisniku će se, prema dogovoru i raspoloživosti,
-                            ponuditi odgovarajući zamjenski termin.
+                            Ako Reformer Centar mora otkazati već plaćeni
+                            termin, korisniku će se, prema dogovoru i
+                            raspoloživosti, ponuditi odgovarajući zamjenski
+                            termin.
                         </p>
 
                         <p>
@@ -201,17 +227,17 @@ export default function PravilaRezervacije() {
 
                         <p>
                             Rezervacija se ne može prenijeti na drugu osobu
-                            bez prethodnog dogovora sa Studiom.
+                            bez prethodnog dogovora s Reformer Centrom.
                         </p>
                     </section>
 
 
                     <section className="content-section">
-                        <h2>9. Obavještavanje Studija</h2>
+                        <h2>9. Obavještavanje Reformer Centra</h2>
 
                         <p>
                             Ako korisnik ne može doći na rezervirani termin,
-                            može o tome obavijestiti Studio radi dogovora o
+                            može obavijestiti Reformer Centar radi dogovora o
                             mogućoj promjeni termina, pod uvjetima iz ovih
                             Pravila.
                         </p>
@@ -253,3 +279,4 @@ export default function PravilaRezervacije() {
         </main>
     )
 }
+
