@@ -1,9 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+
 import { IME_APLIKACIJE } from "../constants";
-import { RezervacijaSection } from "./Rezervacije/Rezervacije";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+/* =========================
+   REVEAL ANIMATION
+========================= */
 
 const Reveal = ({ children, className = "" }) => {
   const ref = useRef(null);
@@ -19,7 +25,9 @@ const Reveal = ({ children, className = "" }) => {
       { threshold: 0.15 }
     );
 
-    if (ref.current) observer.observe(ref.current);
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
 
     return () => observer.disconnect();
   }, []);
@@ -31,284 +39,225 @@ const Reveal = ({ children, className = "" }) => {
   );
 };
 
-const Stat = ({ number, label }) => {
-  const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    let start = 0;
-    const end = parseInt(number, 10);
-    const duration = 1200;
-    const stepTime = Math.max(Math.floor(duration / end), 20);
-
-    const timer = setInterval(() => {
-      start += 1;
-      setCount(start);
-
-      if (start >= end) {
-        clearInterval(timer);
-      }
-    }, stepTime);
-
-    return () => clearInterval(timer);
-  }, [number]);
-
-  return (
-    <div className="stat-card">
-      <strong>
-        {count}
-        {(number === "55" || number === "90") && <small>min</small>}
-        {number === "1" && "+"}
-      </strong>
-
-      <span>{label}</span>
-    </div>
-  );
-};
+/* =========================
+   HOME
+========================= */
 
 function HOME() {
+
+  useEffect(() => {
+    document.title =
+      "Reformer Centar Osijek | Individualni i grupni Reformer treninzi";
+
+    const description =
+      "Reformer Centar Osijek nudi individualne i grupne Reformer treninge. Pokret, snaga, stabilnost i individualni pristup u Osijeku.";
+
+    let meta = document.querySelector(
+      'meta[name="description"]'
+    );
+
+    if (!meta) {
+      meta = document.createElement("meta");
+      meta.name = "description";
+      document.head.appendChild(meta);
+    }
+
+    meta.content = description;
+  }, []);
+
+
   return (
     <main className="home">
 
-      {/* HERO */}
+
+      {/* =========================
+          HERO
+      ========================= */}
+
       <section className="hero">
+
         <div className="hero-glow"></div>
 
         <div className="hero-content">
+
           <span className="eyebrow">
-            • FITNESS • PILATES • PERSONAL
+            REFORMER CENTAR • OSIJEK
           </span>
 
           <h1>
-            Dobrodošli u{" "}
-            <span>{IME_APLIKACIJE}</span>
+            Reformer trening
+            <br />
+            za <em>bolji odnos</em>
+            <br />
+            prema tijelu.
           </h1>
 
           <p>
-            Pokret koji gradi snagu, stabilnost i bolje razumijevanje
-            vlastitog tijela.
+            Individualni i grupni Reformer treninzi u Osijeku,
+            usmjereni na snagu, stabilnost, mobilnost i kvalitetnije
+            kretanje.
           </p>
 
           <div className="hero-buttons">
-            <a href="#rezervacije" className="btn-main">
+
+            <Link
+              to="/rezervacije"
+              className="btn-main"
+            >
               Rezerviraj termin
               <i className="bi bi-arrow-right"></i>
-            </a>
+            </Link>
 
-            <a href="#zasto-reformer" className="btn-secondary">
+            <Link
+              to="/individualni"
+              className="btn-secondary"
+            >
               Saznaj više
-            </a>
+            </Link>
+
           </div>
+
         </div>
 
-        <div className="scroll-indicator"style={{ fontSize: "11px" }}>
+
+        <div
+          className="scroll-indicator"
+          style={{ fontSize: "11px" }}
+        >
           <span></span>
           Scroll
         </div>
+
       </section>
 
 
-      {/* ZAŠTO REFORMER */}
+
+      {/* =========================
+          INTRO / ZAŠTO REFORMER
+      ========================= */}
+
       <Reveal>
-        <section id="zasto-reformer" className="info-section">
+
+        <section
+          id="zasto-reformer"
+          className="info-section"
+        >
+
           <div className="section-heading">
-            <span>01 / ZAŠTO REFORMER?</span>
+
+            <span>
+              01 / ZAŠTO REFORMER?
+            </span>
 
             <h2>
               Više od treninga.
               <br />
               <em>Bolji odnos prema tijelu.</em>
             </h2>
+
           </div>
+
 
           <div className="feature-grid">
 
             <article className="feature-card">
+
               <div className="feature-icon">
                 <i className="bi bi-person-arms-up"></i>
               </div>
 
-              <h3>Svjesniji pokret</h3>
+              <h3>
+                Svjesniji pokret
+              </h3>
 
               <p>
-                Učimo kako pravilno izvoditi pokrete i bolje razumjeti
-                vlastito tijelo.
+                Učimo kako pravilno izvoditi pokrete i bolje
+                razumjeti vlastito tijelo.
               </p>
+
             </article>
 
 
             <article className="feature-card">
+
               <div className="feature-icon">
                 <i className="bi bi-lightning-charge"></i>
               </div>
 
-              <h3>Snaga i stabilnost</h3>
+              <h3>
+                Snaga i stabilnost
+              </h3>
 
               <p>
-                Kontrolirani pokreti aktiviraju mišiće i grade funkcionalnu
-                snagu.
+                Kontrolirani pokreti aktiviraju mišiće i grade
+                funkcionalnu snagu.
               </p>
+
             </article>
 
 
             <article className="feature-card">
+
               <div className="feature-icon">
                 <i className="bi bi-bullseye"></i>
               </div>
 
-              <h3>Individualni pristup</h3>
+              <h3>
+                Individualni pristup
+              </h3>
 
               <p>
-                Vježbe se prilagođavaju tvojoj razini, mogućnostima i
-                ciljevima.
+                Vježbe se prilagođavaju tvojoj razini,
+                mogućnostima i ciljevima.
               </p>
+
             </article>
 
 
             <article className="feature-card">
+
               <div className="feature-icon">
                 <i className="bi bi-heart-pulse"></i>
               </div>
 
-              <h3>Kontrola tijela</h3>
+              <h3>
+                Kontrola tijela
+              </h3>
 
               <p>
-                Fokus nije samo na izgledu, već na kvalitetnijem i sigurnijem
-                kretanju.
+                Fokus je na kvalitetnijem, kontroliranom i
+                sigurnijem kretanju.
               </p>
+
             </article>
 
           </div>
+
         </section>
+
       </Reveal>
 
 
-      {/* STATISTIKE */}
+
+      {/* =========================
+          PROGRAMI
+      ========================= */}
+
       <Reveal>
-        <section className="stats-section">
 
-          <div className="stats-intro">
-            <span>NAŠ PRISTUP</span>
-
-            <h2>
-              Malo drugačiji
-              <br />
-              pogled na trening.
-            </h2>
-          </div>
-
-          <div className="stats-grid">
-
-            <Stat
-              number="55"
-              label="individualnog treninga"
-            />
-
-            <Stat
-              number="90"
-              label="grupnog programa"
-            />
-
-            <Stat
-              number="1"
-              label="reformer po treningu"
-            />
-
-          </div>
-
-        </section>
-      </Reveal>
-
-
-      {/* KAKO IZGLEDA TRENING */}
-      <Reveal>
-        <section className="timeline-section">
-
-          <div className="section-heading centered">
-
-            <span>02 / KAKO IZGLEDA TRENING?</span>
-
-            <h2>
-              Od prvog pokreta
-              <br />
-              do osjećaja <em>lakoće.</em>
-            </h2>
-
-          </div>
-
-
-          <div className="timeline">
-
-            <div className="timeline-item">
-              <div className="timeline-number">01</div>
-
-              <div>
-                <h3>Priprema</h3>
-
-                <p>
-                  Kratko zagrijavanje i priprema tijela za kvalitetan pokret.
-                </p>
-              </div>
-            </div>
-
-
-            <div className="timeline-item">
-              <div className="timeline-number">02</div>
-
-              <div>
-                <h3>Reformer</h3>
-
-                <p>
-                  Upoznajemo spravu i kroz kontrolirane pokrete aktiviramo
-                  cijelo tijelo.
-                </p>
-              </div>
-            </div>
-
-
-            <div className="timeline-item">
-              <div className="timeline-number">03</div>
-
-              <div>
-                <h3>Glavni dio</h3>
-
-                <p>
-                  Fokusiramo se na snagu, stabilnost, mobilnost i pravilnu
-                  tehniku.
-                </p>
-              </div>
-            </div>
-
-
-            <div className="timeline-item">
-              <div className="timeline-number">04</div>
-
-              <div>
-                <h3>Smirivanje</h3>
-
-                <p>
-                  Trening završavamo kontroliranim pokretima i istezanjem.
-                </p>
-              </div>
-            </div>
-
-          </div>
-
-        </section>
-      </Reveal>
-
-
-      {/* PROGRAMI */}
-      <Reveal>
         <section className="program-section">
 
           <div className="section-heading">
 
-            <span>03 / PROGRAMI</span>
+            <span>
+              02 / PROGRAMI
+            </span>
 
             <h2>
-              Odaberi ritam koji
+              Odaberi trening
               <br />
-              <em>odgovara tebi.</em>
+              koji <em>odgovara tebi.</em>
             </h2>
 
           </div>
@@ -316,19 +265,29 @@ function HOME() {
 
           <div className="program-comparison">
 
+
             {/* INDIVIDUALNI */}
-            <div className="program-card">
+
+            <article className="program-card">
 
               <div className="program-top">
-                <span>01</span>
+
+                <span>
+                  01
+                </span>
+
                 <i className="bi bi-person"></i>
+
               </div>
 
-              <h3>Individualni</h3>
+              <h3>
+                Individualni Reformer
+              </h3>
 
               <p>
-                Potpuno personaliziran pristup uz instruktora koji prati tvoj
-                napredak i prilagođava vježbe tvojim potrebama.
+                Potpuno personaliziran trening uz individualni
+                pristup, prilagođen tvojoj razini, potrebama
+                i ciljevima.
               </p>
 
               <ul>
@@ -350,31 +309,40 @@ function HOME() {
 
               </ul>
 
-              <a href="#rezervacije">
-                Rezerviraj individualni
+              <Link to="/individualni">
+                Saznaj više
                 <i className="bi bi-arrow-up-right"></i>
-              </a>
+              </Link>
 
-            </div>
+            </article>
+
 
 
             {/* GRUPNI */}
-            <div className="program-card featured">
+
+            <article className="program-card featured">
 
               <div className="program-badge">
                 POPULARNO
               </div>
 
               <div className="program-top">
-                <span>02</span>
+
+                <span>
+                  02
+                </span>
+
                 <i className="bi bi-people"></i>
+
               </div>
 
-              <h3>Grupni</h3>
+              <h3>
+                Grupni Reformer
+              </h3>
 
               <p>
-                Dinamičan trening u manjoj grupi uz kombinaciju rada na
-                reformeru, prostirci i rekvizitima.
+                Dinamičan trening u manjoj grupi uz kombinaciju
+                rada na reformeru, prostirci i rekvizitima.
               </p>
 
               <ul>
@@ -396,45 +364,207 @@ function HOME() {
 
               </ul>
 
-              <a href="#rezervacije">
-                Rezerviraj grupni
+              <Link to="/grupni">
+                Saznaj više
                 <i className="bi bi-arrow-up-right"></i>
-              </a>
+              </Link>
 
-            </div>
+            </article>
 
           </div>
 
         </section>
+
       </Reveal>
 
 
-      {/* QUOTE */}
+
+      {/* =========================
+          KAKO IZGLEDA TRENING
+      ========================= */}
+
       <Reveal>
-        <section className="quote-section">
 
-          <div className="quote-mark">“</div>
+        <section className="timeline-section">
 
-          <blockquote>
-            Fizička kondicija je prvi uvjet sreće.
-          </blockquote>
+          <div className="section-heading centered">
 
-          <span>— Joseph Pilates</span>
+            <span>
+              03 / KAKO IZGLEDA TRENING?
+            </span>
+
+            <h2>
+              Od prvog pokreta
+              <br />
+              do osjećaja <em>lakoće.</em>
+            </h2>
+
+          </div>
+
+
+          <div className="timeline">
+
+
+            <div className="timeline-item">
+
+              <div className="timeline-number">
+                01
+              </div>
+
+              <div>
+
+                <h3>
+                  Priprema
+                </h3>
+
+                <p>
+                  Kratko zagrijavanje i priprema tijela
+                  za kvalitetan pokret.
+                </p>
+
+              </div>
+
+            </div>
+
+
+
+            <div className="timeline-item">
+
+              <div className="timeline-number">
+                02
+              </div>
+
+              <div>
+
+                <h3>
+                  Reformer
+                </h3>
+
+                <p>
+                  Kroz kontrolirane pokrete aktiviramo
+                  cijelo tijelo i upoznajemo rad na spravi.
+                </p>
+
+              </div>
+
+            </div>
+
+
+
+            <div className="timeline-item">
+
+              <div className="timeline-number">
+                03
+              </div>
+
+              <div>
+
+                <h3>
+                  Glavni dio
+                </h3>
+
+                <p>
+                  Fokus na snagu, stabilnost, mobilnost
+                  i pravilnu tehniku.
+                </p>
+
+              </div>
+
+            </div>
+
+
+
+            <div className="timeline-item">
+
+              <div className="timeline-number">
+                04
+              </div>
+
+              <div>
+
+                <h3>
+                  Smirivanje
+                </h3>
+
+                <p>
+                  Trening završavamo kontroliranim pokretima
+                  i istezanjem.
+                </p>
+
+              </div>
+
+            </div>
+
+
+          </div>
 
         </section>
+
       </Reveal>
 
 
 
-      {/* REZERVACIJE */}
+      {/* =========================
+          OSIJEK / LOKACIJA
+      ========================= */}
+
       <Reveal>
-        <section id="rezervacije" className="reservation-cta">
+
+        <section className="info-section">
+
+          <div className="section-heading">
+
+            <span>
+              04 / REFORMER CENTAR OSIJEK
+            </span>
+
+            <h2>
+              Pokret koji počinje
+              <br />
+              <em>u Osijeku.</em>
+            </h2>
+
+            <p>
+              Pronađi program koji ti odgovara i napravi
+              prvi korak prema kvalitetnijem kretanju.
+            </p>
+
+          </div>
+
+
+          <div className="address-card">
+
+            <strong>
+              Mjesto održavanja treninga
+            </strong>
+
+            <span>
+              BlueGym Centar Osijek, Reformer Centar
+              <br />
+              Pavla Pejačevića 22, Osijek
+            </span>
+
+          </div>
+
+        </section>
+
+      </Reveal>
+
+
+
+      {/* =========================
+          CTA
+      ========================= */}
+
+      <Reveal>
+
+        <section className="reservation-cta">
 
           <div className="cta-content">
-           
 
-
-            <span>04 / REZERVACIJE</span>
+            <span>
+              05 / REZERVACIJE
+            </span>
 
             <h2>
               Vrijeme je da
@@ -443,35 +573,37 @@ function HOME() {
             </h2>
 
             <p>
-              Odaberi program koji ti odgovara i napravi prvi korak prema
-              kvalitetnijem kretanju.
+              Odaberi individualni ili grupni Reformer trening
+              i rezerviraj svoj termin.
             </p>
 
-            <a href="#rezervacija-form" className="cta-button">
+            <Link
+              to="/rezervacije"
+              className="cta-button"
+            >
               Rezerviraj svoj termin
               <i className="bi bi-arrow-right"></i>
-            </a>
+            </Link>
 
           </div>
 
         </section>
+
       </Reveal>
 
 
-<br />
 
+      {/* =========================
+          SOCIAL
+      ========================= */}
 
-      {/* REZERVACIJE - FORMA */}
       <Reveal>
-        <RezervacijaSection />
-      </Reveal>
 
-
-      {/* SOCIAL */}
-      <Reveal>
         <section className="social-section">
 
-          <span>OSTANIMO POVEZANI</span>
+          <span>
+            OSTANIMO POVEZANI
+          </span>
 
           <h2>
             Pratite nas
@@ -511,20 +643,31 @@ function HOME() {
           </div>
 
         </section>
+
       </Reveal>
 
 
-      {/* FOOTER */}
+
+      {/* =========================
+          FOOTER
+      ========================= */}
+
       <footer className="site-footer">
 
         <div className="footer-content">
-          <p>© 2026 Reformer Centar App | MDergez App solutions</p>
+
+          <p>
+            © 2026 Reformer Centar Osijek
+          </p>
+
         </div>
 
       </footer>
 
+
     </main>
   );
 }
+
 
 export default HOME;
