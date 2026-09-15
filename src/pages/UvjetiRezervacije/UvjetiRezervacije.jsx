@@ -1,3 +1,4 @@
+
 export default function UvjetiRezervacije() {
     return (
         <main className="page-wrapper">
@@ -5,7 +6,7 @@ export default function UvjetiRezervacije() {
 
                 <div className="page-header">
                     <span className="page-eyebrow">
-                        Reformer Centar
+                        Reformer Centar Osijek
                     </span>
 
                     <h1>Uvjeti rezervacije</h1>
@@ -34,7 +35,9 @@ export default function UvjetiRezervacije() {
                         </p>
 
                         <p>
-                            <strong>BlueGym Centar Osijek,Reformer Centar</strong><br />
+                            <strong>
+                                BlueGym Centar Osijek, Reformer Centar
+                            </strong><br />
                             Pavla Pejačevića 22, Osijek
                         </p>
 
@@ -43,6 +46,7 @@ export default function UvjetiRezervacije() {
                             rezervacije i Pravila rezervacije i otkazivanja.
                         </p>
                     </section>
+
 
                     <section className="content-section">
                         <h2>2. Usluga i cijena</h2>
@@ -66,6 +70,7 @@ export default function UvjetiRezervacije() {
                             prilikom rezervacije, ovisno o dostupnosti termina.
                         </p>
                     </section>
+
 
                     <section className="content-section">
                         <h2>3. Rezervacija termina</h2>
@@ -101,6 +106,7 @@ export default function UvjetiRezervacije() {
                         </p>
                     </section>
 
+
                     <section className="content-section">
                         <h2>4. Plaćanje</h2>
 
@@ -122,6 +128,7 @@ export default function UvjetiRezervacije() {
                         </p>
                     </section>
 
+
                     <section className="content-section">
                         <h2>5. Potvrda rezervacije</h2>
 
@@ -137,6 +144,7 @@ export default function UvjetiRezervacije() {
                         </p>
                     </section>
 
+
                     <section className="content-section">
                         <h2>6. Promjena i otkazivanje termina</h2>
 
@@ -148,8 +156,8 @@ export default function UvjetiRezervacije() {
 
                         <p>
                             Ako korisnik želi promijeniti termin, potrebno je
-                            javiti se izravno Reformer Centru odnosno doći u Reformer Centar
-                            radi dogovora o drugom terminu.
+                            javiti se izravno Reformer Centru odnosno doći u
+                            Reformer Centar radi dogovora o drugom terminu.
                         </p>
 
                         <p>
@@ -197,6 +205,7 @@ export default function UvjetiRezervacije() {
                         </p>
                     </section>
 
+
                     <section className="content-section">
                         <h2>7. Otkazivanje termina od strane pružatelja usluge</h2>
 
@@ -211,6 +220,7 @@ export default function UvjetiRezervacije() {
                             na način propisan važećim propisima.
                         </p>
                     </section>
+
 
                     <section className="content-section">
                         <h2>8. Pravo potrošača na jednostrani raskid</h2>
@@ -236,6 +246,7 @@ export default function UvjetiRezervacije() {
                         </p>
                     </section>
 
+
                     <section className="content-section">
                         <h2>9. Prigovor potrošača</h2>
 
@@ -253,9 +264,11 @@ export default function UvjetiRezervacije() {
 
                         <p>
                             Na zaprimljeni prigovor odgovorit ćemo u roku
-                            propisanom važećim propisima.
+                            od 15 dana od dana njegova zaprimanja, u skladu
+                            s važećim propisima.
                         </p>
                     </section>
+
 
                     <section className="content-section">
                         <h2>10. Snimanje i objava sadržaja</h2>
@@ -285,8 +298,8 @@ export default function UvjetiRezervacije() {
                             Način obrade osobnih podataka povezanih sa
                             snimanjem i objavom uređen je Politikom privatnosti.
                         </p>
-ž
                     </section>
+
 
                     <section className="content-section">
                         <h2>11. Završne odredbe</h2>
@@ -311,6 +324,7 @@ export default function UvjetiRezervacije() {
                     </section>
 
                 </div>
+
 
                 <footer className="page-footer">
                     <p>

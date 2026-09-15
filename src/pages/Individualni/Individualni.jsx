@@ -1,3 +1,4 @@
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function INDIVIDUALNI() {
@@ -7,16 +8,17 @@ export default function INDIVIDUALNI() {
 
                 <div className="page-header module-header">
                     <span className="page-eyebrow">
-                        Reformer Centar
+                        Reformer Centar Osijek
                     </span>
 
-                    <h1>Osobni program</h1>
+                    <h1>Individualni reformer trening</h1>
                 </div>
+
                 <div className="individual-actions">
 
-                    <button className="page-button">
+                    <a href="/rezervacije" className="page-button">
                         Rezerviraj termin
-                    </button>
+                    </a>
 
                     <div className="legal-links">
                         <a href="/uvjeti-rezervacije">
@@ -26,9 +28,10 @@ export default function INDIVIDUALNI() {
                         <a href="/pravila-rezervacije-i-otkazivanja">
                             Pravila rezervacije i otkazivanja
                         </a>
+
                         <a href="/privatnost">
-    Politika privatnosti
-</a>
+                            Politika privatnosti
+                        </a>
                     </div>
 
                 </div>
@@ -40,6 +43,7 @@ export default function INDIVIDUALNI() {
                         <h3>Trajanje</h3>
                         <p>55 minuta individualnog treninga.</p>
                     </div>
+
                     <div className="info-card">
                         <i className="bi bi-currency-euro"></i>
                         <h3>Cijena</h3>
@@ -47,6 +51,7 @@ export default function INDIVIDUALNI() {
                         <small>Cijena uključuje PDV.</small>
                         <small>Bez dodatne naknade za kartično plaćanje korisniku.</small>
                     </div>
+
                     <div className="info-card">
                         <i className="bi bi-person"></i>
                         <h3>Individualni pristup</h3>
@@ -70,52 +75,70 @@ export default function INDIVIDUALNI() {
                 <div className="page-content">
 
                     <p>
-                        Trenutno u Centru imamo jednu spravu Reformer na kojem
+                        Individualni reformer trening u Reformer Centru Osijek
+                        namijenjen je svima koji žele rad <strong>rad jedan-na-jedan</strong>,
+                        individualnu pažnju i trening prilagođen vlastitim
+                        mogućnostima i ciljevima.
+                    </p>
+
+                    <p>
+                        Trenutno u Centru imamo jednu spravu Reformer na kojoj
                         se izvode individualni treninzi u privatnom okruženju.
-                        Instruktorica prilagođava vježbe vašim mogućnostima,
-                        potrebama i ciljevima.
+                        Instruktorica tijekom treninga prilagođava vježbe,
+                        intenzitet i način rada vašim potrebama.
                     </p>
 
                     <p>
-                        Svih 55 minuta ste na Reformeru, od zagrijavanja do
-                        istezanja. Individualni treninzi omogućuju veći fokus
-                        na tehniku, pravilno izvođenje pokreta i postizanje
-                        rezultata kojima težite.
+                        Svih 55 minuta treninga provodite na Reformeru,
+                        od početne pripreme i zagrijavanja do završnog
+                        smirivanja. Individualni rad omogućuje veći fokus
+                        na tehniku, kontrolu pokreta i kvalitetu izvedbe.
                     </p>
 
                     <p>
-                        Ovaj program idealan je za one koji žele intenzivniji
-                        pristup vježbanju, imaju specifične ciljeve ili se
-                        oporavljaju od ozljeda.
+                        Trening je prikladan za osobe koje žele individualniji
+                        pristup vježbanju, imaju određene ciljeve ili žele
+                        postupno unaprijediti svoju snagu, stabilnost,
+                        mobilnost i kvalitetu kretanja.
+                    </p>
+
+
+                    <p>
+                        Individualni pristup može biti posebno koristan
+                        osobama koje se nakon dulje pauze ili {' '}
+                        <strong>oporavka od ozljede</strong> žele postupno
+                       vratiti redovitom vježbanju.
                     </p>
 
                     <p>
-                        Vaš razvoj JE praćen i prilagodba treninga ovisi o
-                        vašem napretku kako bi vježbanje bilo što sigurnije
-                        i učinkovitije.
+                        Vaš napredak prati se kroz treninge, a sadržaj i
+                        zahtjevnost vježbi prilagođavaju se vašem razvoju.
+                        Cilj je da trening bude smislen, kvalitetno vođen
+                        i prilagođen vašoj trenutnoj razini.
                     </p>
 
                     <p>
                         Ako želite, možete zatražiti i besplatno snimanje
-                        treninga kako biste kasnije mogli pratiti izvedbu
-                        vježbi.
+                        dijela treninga kako biste kasnije mogli pratiti
+                        izvedbu vježbi.
                     </p>
 
                     <p>
-                        Vaš sat prilagođen je vašim željama i mogućnostima.
-                        Radujemo se svim vašim pomacima i postignućima.
+                        Svaki trening prilagođen je vašim mogućnostima,
+                        tempu i ciljevima. Radujemo se pratiti vaše pomake
+                        i napredak.
                     </p>
 
                     <p>
                         <strong>Napomena:</strong> Vježbate na vlastitu
                         odgovornost te je potrebno pridržavati se
-                        instruktorskih uputa kako bi vježbanje bilo sigurno
-                        i učinkovito.
+                        instruktorskih uputa tijekom treninga.
                     </p>
 
                 </div>
 
             </section>
+
             {/* SOCIAL PODSJETNIK */}
 
             <section className="social-reminder">
@@ -123,9 +146,9 @@ export default function INDIVIDUALNI() {
                 <span>OSTANIMO U POKRETU</span>
 
                 <h2>
-                    Ono što se događa u  Centru,
+                    Ono što se događa u Centru,
                     <br />
-                    <em>ne ostaje uvijek samo u  Centru.</em>
+                    <em>ne ostaje uvijek samo u Centru.</em>
                 </h2>
 
                 <p>Pratite nas.</p>
@@ -163,18 +186,15 @@ export default function INDIVIDUALNI() {
 
             </section>
 
-
             {/* FOOTER */}
 
             <footer className="site-footer">
                 <div className="footer-content">
-                    <p>© 2026 Reformer Centar | MDergez web solutions</p>
+                    <p>© 2026 | MDergez </p>
                 </div>
             </footer>
 
         </main>
-
-            
-   
     )
 }
+

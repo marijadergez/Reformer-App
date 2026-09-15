@@ -185,9 +185,11 @@ function HOME() {
 
             <p>
               Trening na reformeru omogućuje kontroliran rad
-              i prilagodbu vježbi različitim razinama
-              i ciljevima.
+              i prilagodbu vježbi različitim razinama i ciljevima,
+              uključujući postupni povratak vježbanju nakon dulje
+              pauze ili oporavka od ozljede.
             </p>
+
 
           </div>
 
@@ -554,13 +556,13 @@ function HOME() {
             <h2>
               Pronađi nas
               <br />
-              u <em>Osijeku.</em>
+              u centru <em>Osijeka.</em>
             </h2>
 
-            <p>
+          {/* <p>
               Reformer Centar Osijek nalazi se u prostoru
               BlueGym Centra Osijek.
-            </p>
+            </p> */}
 
           </div>
 
@@ -572,7 +574,7 @@ function HOME() {
             </strong>
 
             <span>
-              BlueGym Centar Osijek
+              nalazi se u prostoru BlueGym Centra Osijek
               <br />
               Pavla Pejačevića 22, Osijek
             </span>
@@ -684,7 +686,7 @@ function HOME() {
         <div className="footer-content">
 
           <p>
-            © 2026 Reformer Centar Osijek
+            © 2026 | MDergez
           </p>
 
         </div>

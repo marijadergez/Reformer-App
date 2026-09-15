@@ -1,3 +1,4 @@
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function GRUPNI() {
@@ -8,109 +9,127 @@ export default function GRUPNI() {
 
                 <div className="page-header module-header">
                     <span className="page-eyebrow">
-                        Reformer Centar
+                        Reformer Centar Osijek
                     </span>
 
-                    <h1>Grupni program</h1>
+                    <h1>Grupni reformer trening</h1>
                 </div>
-              
 
                 <div className="info-grid">
 
                     <div className="info-card">
                         <i className="bi bi-clock"></i>
                         <h3>Trajanje</h3>
-                        <p>Trening traje 90 minuta.</p>
+                        <p><strong>90 minuta</strong> treninga.</p>
                     </div>
+
                     <div className="info-card">
                         <i className="bi bi-currency-euro"></i>
                         <h3>Cijena</h3>
-                        <p>20,00 € za 2 osobe.</p>
+                        <p><strong>20,00 € za 2 osobe</strong></p>
                         <small>Cijena uključuje PDV.</small>
-                        <small></small>
                     </div>
+
                     <div className="info-card">
                         <i className="bi bi-people"></i>
                         <h3>Grupni trening</h3>
-                        <p>Program se odvija uz izmjenu rada na Reformeru i prostirci.</p>
+                        <p>
+                            Program za <strong>2 osobe</strong> uz izmjenu
+                            rada na Reformeru i prostirci.
+                        </p>
                     </div>
 
                     <div className="info-card">
                         <i className="bi bi-universal-access"></i>
                         <h3>Funkcionalni trening</h3>
-                        <p>Koriste se prostirka i različiti rekviziti.</p>
+                        <p>
+                            Koriste se prostirka i različiti rekviziti
+                            prema sadržaju treninga.
+                        </p>
                     </div>
 
                     <div className="info-card">
                         <i className="bi bi-activity"></i>
                         <h3>Cilj treninga</h3>
-                        <p>Fokus na mišićne skupine prema potrebama vježbača.</p>
+                        <p>
+                            Fokus na snagu, stabilnost, mobilnost i
+                            odabrane mišićne skupine.
+                        </p>
                     </div>
-
-                 
 
                 </div>
 
                 <div className="page-content">
 
                     <p>
-                        U Reformer Centru trenutno imamo jednu spravu Reformer na kojoj
-                        se izvode grupni treninzi u trajanju 90 minuta.
+                        Grupni reformer trening u Reformer Centru Osijek
+                        namijenjen je za <strong>dvije osobe</strong> koje žele
+                        trenirati zajedno i kombinirati rad na Reformeru
+                        s vježbama na prostirci.
                     </p>
 
                     <p>
-                        Program je prilagođen osobama koje žele kombinaciju rada na Reformeru i
-                        funkcionalnog treninga na prostirci uz korištenje
-                        rekvizita ili  imaju potrebu za dužom pauzom
-                        između vježbi.
+                        U Centru trenutno imamo jednu spravu Reformer,
+                        pa se tijekom treninga izmjenjuju rad na Reformeru
+                        i rad na prostirci uz korištenje različitih rekvizita.
                     </p>
 
                     <p>
-                        Dok jedna osoba vježba na Reformeru, druga odmara ili
-                        vježba na prostirci. Na taj način trening može uključiti
-                        različite vrste vježbi i omogućiti fokus na određene
-                        skupine mišića koje želite intenzivnije obuhvatiti.
+                        Dok jedna osoba vježba na Reformeru, druga radi
+                        vježbe na prostirci ili koristi vrijeme za odmor.
+                        Na taj način trening uključuje različite vrste
+                        vježbi i omogućuje rad na snazi, stabilnosti,
+                        mobilnosti i odabranim mišićnim skupinama.
                     </p>
 
                     <p>
-                        Vaši rezultati bit će kronološki praćeni, a ako želite,
-                        možete zatražiti i besplatno snimanje treninga.
+                        Program je prilagođen mogućnostima i ciljevima
+                        vježbača, a sadržaj treninga može se prilagođavati
+                        tijekom rada prema potrebama grupe.
                     </p>
 
                     <p>
-                        Vaš sat prilagođen je vašim željama i mogućnostima te
-                        se radujemo svim vašim pomacima i postignućima.
+                        Napredak se prati kroz treninge, a ako želite,
+                        možete zatražiti i besplatno snimanje dijela
+                        treninga kako biste kasnije mogli pratiti
+                        izvedbu vježbi.
+                    </p>
+
+                    <p>
+                        Vaš trening prilagođen je vašim mogućnostima,
+                        tempu i ciljevima. Cilj je kvalitetno i smisleno
+                        kretanje u ugodnom radu u paru.
                     </p>
 
                     <p>
                         <strong>Napomena:</strong> Vježbate na vlastitu
                         odgovornost te je potrebno pridržavati se
-                        instruktorskih uputa kako bi vježbanje bilo sigurno
-                        i učinkovito.
+                        instruktorskih uputa tijekom treninga.
                     </p>
 
                     <br />
 
-                       <div className="reservation-card">
-                    <i className="bi bi-people"></i>
+                    <div className="reservation-card">
+                        <i className="bi bi-people"></i>
 
-                    <h2>Grupni trening</h2>
+                        <h2>Grupni trening</h2>
 
-                    <p>
-                        Za rezervaciju grupnog treninga potrebno je
-                        osobno doći u Reformer Centar, na adresu Blue Gym Centar Osijek, Pavla Pejačevića 22, kako bismo dogovorili
-                        detalje i način plaćanja. 
-                    </p>
-                       <p>
-                    Trenutno nemamo kontakt formu za rezervaciju grupnih treninga.
-                    Ali radimo na tome.
-                </p>
-                </div>
+                        <p>
+                            Za rezervaciju grupnog treninga potrebno je <strong>osobno doći</strong>{' '}
+                             u Reformer Centar, na adresu
+                            BlueGym Centar Osijek, Pavla Pejačevića 22,
+                            kako bismo dogovorili detalje i način plaćanja.
+                        </p>
+
+                        <p>
+                            Trenutno nemamo kontakt formu za rezervaciju
+                            grupnih treninga, ali radimo na tome.
+                        </p>
+                    </div>
 
                 </div>
 
             </section>
-
 
             {/* SOCIAL PODSJETNIK */}
 
@@ -119,9 +138,9 @@ export default function GRUPNI() {
                 <span>OSTANIMO U POKRETU</span>
 
                 <h2>
-                    Ono što se događa u  Centru,
+                    Ono što se događa u Centru,
                     <br />
-                    <em>ne ostaje uvijek samo u  Centru.</em>
+                    <em>ne ostaje uvijek samo u Centru.</em>
                 </h2>
 
                 <p>Pratite nas.</p>
@@ -159,15 +178,15 @@ export default function GRUPNI() {
 
             </section>
 
-
             {/* FOOTER */}
 
             <footer className="site-footer">
                 <div className="footer-content">
-                    <p>© 2026 Reformer Centar | MDergez web solutions </p>
+                    <p>© 2026 | MDergez</p>
                 </div>
             </footer>
 
         </main>
     )
 }
+

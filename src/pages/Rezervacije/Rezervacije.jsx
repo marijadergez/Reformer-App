@@ -6,21 +6,22 @@ export function RezervacijaSection() {
         <>
             <div className="page-header">
                 <span className="page-eyebrow">
-                    Reformer Centar
+                    Reformer Centar Osijek
                 </span>
 
-                <h1>Rezervacije termina</h1>
+                <h1>Rezerviraj svoj termin</h1>
             </div>
 
             {/* Individualni trening */}
+
             <div className="reservation-card">
 
                 <i className="bi bi-person-check"></i>
 
-                <h2>Individualni trening</h2>
+                <h2>Individualni reformer trening</h2>
 
                 <p>
-                    <strong>55 minuta — 11,00 € po osobi</strong>
+                    <strong>55 minuta · 11,00 € po osobi</strong>
                 </p>
 
                 <p>
@@ -30,8 +31,8 @@ export function RezervacijaSection() {
                 </p>
 
                 <p>
-                    Termin se rezervira za odabrani datum i vrijeme, a
-                    rezervacija se potvrđuje nakon izvršenog plaćanja.
+                    Odaberite željeni termin i slijedite upute za rezervaciju
+                    i plaćanje.
                 </p>
 
                 <div className="reservation-actions">
@@ -67,11 +68,16 @@ export function RezervacijaSection() {
 
 
             {/* Grupni trening */}
+
             <div className="reservation-card">
 
                 <i className="bi bi-people"></i>
 
-                <h2>Grupni trening</h2>
+                <h2>Grupni reformer trening</h2>
+
+                <p>
+                    <strong>90 minuta · 20,00 € za 2 osobe</strong>
+                </p>
 
                 <p>
                     Grupne treninge trenutno je moguće rezervirati osobno
@@ -88,6 +94,7 @@ export function RezervacijaSection() {
 
 
             {/* Mjesto održavanja */}
+
             <div className="address-card">
 
                 <strong>Mjesto održavanja treninga</strong>
